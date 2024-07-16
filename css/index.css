@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1181px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ body {
   border-radius: 68px;
   padding: 10px;
   text-decoration: none;
-  width: 100%;
+
 }
 
 .btn--primary {
@@ -57,36 +57,37 @@ body {
 
 }
 
-header {
+.header {
   background-color: #172755;
 
 }
 
-.header__top-top {  
+.header .header__top {  
   background: #0088F080;
   padding-top: 48px;
   padding-bottom: 22px;
 }
 
 
-.header__top {
+.header__top-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__bottom {
- padding-top: 28px;
- padding-bottom: 38px;
+ padding-top: 18px;
+ padding-bottom: 29px;
 }
 
 
-.nav__menu {
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   gap: 36px;
+  line-height: 18.75px;
 }
 
 .menu__link {
@@ -101,23 +102,26 @@ header {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  font-size:16px;
+  line-height:18.75px;
 }
+
 
 .header__btn {
-  width: 160px;
+  padding: 10px 53px;
 }
 
-.header__logo img {
+.header__logo {
   width: 190px;
   height: 40px;
 }
 
-.header__search-bar {
+.header__search{
   display: flex;
   align-items: center;
 }
 
-.header__search-bar input {
+.header__search-input {
   padding: 18px;
   border: none;
   border-radius: 8px 0px 0px 8px;
@@ -125,7 +129,7 @@ header {
   height: 45px;
 }
 
-.header__search-bar button {
+.header__search-button {
   background-color: #EF2A82;
   border: none;
   border-radius: 0px 6px 6px 0px;
@@ -133,52 +137,43 @@ header {
 }
 
 
-.header__user-options button {
-  background: none;
-  border: none;
-  color: white;
-  margin-right: 10px;
-}
 
 .header__location-hello {
   font-size: 20px;
   color: white;
   font-family: 'Source Sans Pro';
-  line-height: 25px;
+  line-height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
   margin-right: 40px;
   font-weight: 400;
+  letter-spacing: 1%;
 }
 
-.header__hello img, 
-.header__location img {
+.header__hello-img, 
+.header__location-img{
   width: 24px;
   height: 24px; 
-  margin-bottom: -4px;
+  margin-bottom: -8px;
+  margin-right: 3px;
+  font-weight: 400;
 }
+
+
 
 .bord {
   border: #A6A6A6 solid 1px;
   height: 40px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
+ 
+.nav-link {
   font-size: 14px;
-}
-
-.nav-links a {
-  color: #FFCCB4;
   text-decoration: none;
-}
-
-.location,
-.hello {
-  margin-right: 4px;
-}
-
+  line-height: 20px;
+  color: #FFCCB4;
   
+}
 
