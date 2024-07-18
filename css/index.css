@@ -10,6 +10,7 @@
 body {
   font-weight: 400;
   font-style: normal;
+  background-color: #f5f5f5;
 }
 
 .container {
@@ -253,3 +254,137 @@ body {
     font-size: 14px;
   }
 }
+
+.product {
+	max-width: 1343px;
+  height: 613px;
+	margin: auto;
+	padding: 50px 0px 0px 0px;
+	display: grid;
+	grid-template-columns: 58% 42%;
+
+}
+
+
+.product-carousel{
+  position: relative;
+  width: 773px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item {
+  min-width: 773px;
+  height: 563px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.prev, 
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid black; 
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 43px;
+  height: 45px;
+  border: 2px 0px 0px 0px;
+
+}
+
+.prev {
+  left: 5px;
+  color: black;
+  border: 2px 0px 0px 0px;
+}
+
+.next {
+  right: 5px;
+  color: black;
+  border: 2px 0px 0px 0px;
+} 
+
+
+
+.product-derecha {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap:25px;
+  margin-left: 39px;
+}
+
+
+.product-card {
+	border-radius: 10px;
+  width: 253px;
+  height: 265px;
+	padding: 0px 52px 49px 12px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	background-color: white;
+}
+
+.product-card .product-categoria{
+ display: flex;
+ color: #A6A6A6;
+ font-size: 12px;
+ line-height: 16px;
+ opacity: 0.6;
+ font-weight: 600;
+}
+
+.product-nombre {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  
+}
+
+.product-total {
+display: block;  
+font-size: 20px;
+font-weight: 700;
+line-height: 25.14px;
+text-align: left;
+color: #363535;
+
+}
+
+.product-valor{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-entrega{
+  color: #D14D41;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 15.08px;
+  text-align: left;
+  background-color:#FAEDEC; 
+  width: 83px;
+  height: 23.62px;
+  padding: 5px 4px 5px 4px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.product-img{
+ margin-bottom:-2px;
+}
+
+
