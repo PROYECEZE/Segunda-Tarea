@@ -74,22 +74,33 @@
     </div>
   </header>
 
-  <main>
-    <section class="product">
+    <main>
+     <section class="product">
+      <div class="carousel">
       <div class="product-carousel">
-        <div class="carousel">
+        <div class="carousel-img">
           <div class="carousel-item product-banner" style="background-image: url('image/Banner.jpg')"></div>
           <div class="carousel-item product-banner" style="background-image: url('image/Banner.jpg')"></div>
           <div class="carousel-item product-banner" style="background-image: url('image/Banner.jpg')"></div>
         </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      <div class="indicators">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
       </div>
+     </div>
+     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+     <button class="next" onclick="moveSlide(1)">&#10095;</button>
+     </div>
+
       <div class="product-derecha">
         <div class="product-card" >
-          <div class="img-producto">
-            <img src="image/1.jpg" alt="">
+          <div class="img-product">
+            <img src="image/1.png" alt="" class="rating">
+            <span class="star">&#9733;</span>
+            <span class="rating-number">5</span>
           </div>
+
           <div class="sales-products">
             <span class="product-categoria">HOME ELECTRICS</span>
             <span class="product-nombre">Aire acondicionado 12.000 BTU</span>
@@ -102,8 +113,10 @@
           </div>
         </div>
         <div class="product-card" >
-          <div class="img-producto">
-            <img src="image/2.png" alt="">
+          <div class="img-product">
+            <img src="image/2.png" alt=""class="rating">
+            <span class="star">&#9733;</span>
+            <span class="rating-number">4</span>
           </div>
           <div class="sales-products">
             <span class="product-categoria">FORZA</span>
@@ -117,8 +130,10 @@
           </div>
         </div>
         <div class="product-card" >
-          <div class="img-producto">
-            <img src="image/3.png" alt="">
+          <div class="img-product">
+            <img src="image/3.png" alt=""class="rating">
+            <span class="star">&#9733;</span>
+            <span class="rating-number">4</span>
           </div>
           <div class="sales-products">
             <span class="product-categoria">COOKING E</span>
@@ -132,8 +147,10 @@
           </div>
         </div>
         <div class="product-card" >
-          <div class="img-producto">
-            <img src="image/4.png" alt="">
+          <div class="img-product">
+            <img src="image/4.png" alt=""class="rating">
+            <span class="star">&#9733;</span>
+            <span class="rating-number">4</span>
           </div>
           <div class="sales-products">
             <span class="product-categoria">WESTINGHOUSE</span>
@@ -152,4 +169,3 @@
   <script src="index.js"></script>
 </body>
 </html>
-
