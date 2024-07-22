@@ -73,154 +73,227 @@
       </div>
     </div>
   </header>
-
-    <main>
-     <section class="product">
+  <main>
+    <section class="product">
       <div class="carousel">
-      <div class="product-carousel">
-        <div class="carousel-img">
-          <div class="carousel-item product-banner" style="background-image: url('image/Banner.jpg')"></div>
-          <div class="carousel-item product-banner" style="background-image: url('image/Banner.jpg')"></div>
-          <div class="carousel-item product-banner" style="background-image: url('image/Banner.jpg')"></div>
+        <div class="product__carousel">
+          <div class="carousel__img">
+            <div class="carousel__item product-banner" style="background-image: url('image/Banner.jpg')"></div>
+            <div class="carousel__item product-banner" style="background-image: url('image/Banner.jpg')"></div>
+            <div class="carousel__item product-banner" style="background-image: url('image/Banner.jpg')"></div>
+          </div>
+          <div class="indicators">
+            <button type="button" class="dot js-go-to-slide" data-slide="0"></button>
+            <button type="button" class="dot js-go-to-slide" data-slide="1"></button>
+            <button type="button" class="dot js-go-to-slide" data-slide="2"></button>
+          </div>
         </div>
-      <div class="indicators">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
+        <button class="prev js-move-slide" data-direction="-1">&#10094;</button>
+        <button class="next js-move-slide" data-direction="1">&#10095;</button>
       </div>
-     </div>
-     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-     <button class="next" onclick="moveSlide(1)">&#10095;</button>
-     </div>
-
-      <div class="product-derecha">
-        <div class="product-card" >
-          <div class="img-product">
-            <img src="image/1.png" alt="" class="rating">
-            <span class="star">&#9733;</span>
-            <span class="rating-number">5</span>
-          </div>
-
-          <div class="sales-products">
-            <span class="product-categoria">HOME ELECTRICS</span>
-            <span class="product-nombre">Aire acondicionado 12.000 BTU</span>
-            <div class="product-valor">
-            <span class="product-total"><p>159.99</p></span>
-           <div class="product-entrega">
-            <img class= "product-img"src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
-             </div>
-          </div>
-          </div>
-        </div>
-        <div class="product-card" >
-          <div class="img-product">
-            <img src="image/2.png" alt=""class="rating">
-            <span class="star">&#9733;</span>
-            <span class="rating-number">4</span>
-          </div>
-          <div class="sales-products">
-            <span class="product-categoria">FORZA</span>
-            <span class="product-nombre">Adaptador de corriente de 3 pines</span>
-            <div class="product-valor">
-            <span class="product-total"><p>6.99</p></span>
-              <div class="product-entrega">
-                <img class= "product-img"src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+      <div class="product__derecha">
+        <div class="product__card">
+          <a href="#" class="product-card__link">
+            <div class="img__product">
+              <img src="image/1.png" alt="" class="rating">
+              <span class="star">&#9733;</span>
+              <span class="rating__number">5</span>
+            </div>
+            <div class="sales__products">
+              <span class="product__categoria">HOME ELECTRICS</span>
+              <span class="product__nombre">Aire acondicionado 12.000 BTU</span>
+              <div class="product__valor">
+                <p class="product__total">159.99</p>
+                <div class="product__entrega">
+                  <img class="product__img" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="product-card" >
-          <div class="img-product">
-            <img src="image/3.png" alt=""class="rating">
-            <span class="star">&#9733;</span>
-            <span class="rating-number">4</span>
-          </div>
-          <div class="sales-products">
-            <span class="product-categoria">COOKING E</span>
-            <span class="product-nombre">Olla freidora Air-fryer de 2 Litros</span>
-            <div class="product-valor">
-            <span class="product-total"><p>49.99</p></span>
-              <div class="product-entrega">
-                <img class= "product-img"src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+        <div class="product__card">
+          <a href="#" class="product-card__link">
+            <div class="img__product">
+              <img src="image/2.png" alt="" class="rating">
+              <span class="star">&#9733;</span>
+              <span class="rating__number">4</span>
+            </div>
+            <div class="sales__products">
+              <span class="product__categoria">FORZA</span>
+              <span class="product__nombre">Adaptador de corriente de 3 pines</span>
+              <div class="product__valor">
+                <p class="product__total">6.99</p>
+                <div class="product__entrega">
+                  <img class="product__img" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="product-card" >
-          <div class="img-product">
-            <img src="image/4.png" alt=""class="rating">
-            <span class="star">&#9733;</span>
-            <span class="rating-number">4</span>
-          </div>
-          <div class="sales-products">
-            <span class="product-categoria">WESTINGHOUSE</span>
-            <span class="product-nombre">Hidrolavadora eléctrica 1450 psi y 1400w</span>
-            <div class="product-valor">
-            <span class="product-total"><p>79.99</p></span>
-            <div class="product-entrega">
-              <img class= "product-img"src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+        <div class="product__card">
+          <a href="#" class="product-card__link">
+            <div class="img__product">
+              <img src="image/3.png" alt="" class="rating">
+              <span class="star">&#9733;</span>
+              <span class="rating__number">4</span>
             </div>
-          </div>
+            <div class="sales__products">
+              <span class="product__categoria">COOKING E</span>
+              <span class="product__nombre">Olla freidora Air-fryer de 2 Litros</span>
+              <div class="product__valor">
+                <p class="product__total">49.99</p>
+                <div class="product__entrega">
+                  <img class="product__img" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-       </div>
-      </section>
-
-      <section class="categorias-productos">
+        <div class="product__card">
+          <a href="#" class="product-card__link">
+            <div class="img__product">
+              <img src="image/4.png" alt="" class="rating">
+              <span class="star">&#9733;</span>
+              <span class="rating__number">4</span>
+            </div>
+            <div class="sales__products">
+              <span class="product__categoria">WESTINGHOUSE</span>
+              <span class="product__nombre">Hidrolavadora eléctrica 1450 psi y 1400w</span>
+              <div class="product__valor">
+                <p class="product__total">79.99</p>
+                <div class="product__entrega">
+                  <img class="product__img" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
+                </div>
+              </div>
+            </div>
+        </div>
+        </a>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="carousel__categories">
         <h3>Categorías para ti </h3>
-        <div class="seccion-dos">
-        
-        <div class="card-baner" >
-          <div class="img-producto">
-            <img src="image/p-banner.png" alt="">
-          </div>
-          <div class="texto-banner">
-            <p>Refrigeradores </p>
-            <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>   
+        <div class="categories__products">
+          <div class="categories__products-shoppings">
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/Refrigerators.png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Refrigeradores </p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/swimming pool.png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Piscinas</p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/headphones .png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Audífonos</p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/Lamps.png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Lámparas</p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/Refrigerators.png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Refrigeradores </p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/swimming pool.png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Piscinas</p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/headphones .png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Audífonos</p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="categories__link">
+              <div class="card__baner">
+                <div class="img__producto">
+                  <img src="image/Lamps.png" alt="">
+                </div>
+                <div class="text__banner">
+                  <p>Lámparas</p>
+                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="card-baner" >
-          <div class="img-producto">
-            <img src="image/Rectangle1.png" alt="">
-          </div>
-          <div class="texto-banner">
-            <p>Piscinas</p>
-            <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </div>
-        </div>
-        <div class="card-baner" >
-          <div class="img-producto">
-            <img src="image/Rectangle2.png" alt="">
-          </div>
-          <div class="texto-banner">
-            <p>Audifonos</p>
-            <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              
-          </div>
-        </div>
-        <div class="card-baner" >
-          <div class="img-producto">
-            <img src= "image/Rectangle3.png" alt="">
-          </div>
-          <div class="texto-banner">
-            <p>Lamparas</p>
-            <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>   
-          </div>
-        </div>
-      </section>
-    </main>
-    
+        <button class="prev__card js-moved-slide" data-direction="-1">&#10094;</button>
+        <button class="next__card js-moved-slide" data-direction="1">&#10095;</button>
+      </div>
+    </section>
+  </main>
   <footer></footer>
   <script src="index.js"></script>
 </body>
