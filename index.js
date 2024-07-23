@@ -12,19 +12,31 @@ function moveSlide(n) {
     slideIndex = totalSlides - 1;
   }
 
-  const offset = -slideIndex * 773; 
-  document.querySelector('.carousel__img').style.transform = `translateX(${offset}px)`;
-
+  updateSlidePosition();
   updateDots();
 }
 
 function currentSlide(n) {
   slideIndex = n;
-  const offset = -slideIndex * 773;
-  document.querySelector('.carousel__img').style.transform = `translateX(${offset}px)`;
-
+  updateSlidePosition();
   updateDots();
 }
+
+function updateSlidePosition() {
+  const slides = document.querySelectorAll('.carousel__item');
+  const slideWidth = slides[0].offsetWidth;
+  const offset = -slideIndex * slideWidth;
+  document.querySelector('.carousel__img').style.transform = `translateX(${offset}px)`;
+}
+
+function updateDots() {
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === slideIndex);
+  });
+}
+
+window.addEventListener('resize', updateSlidePosition);
 
 // indicators //
 
