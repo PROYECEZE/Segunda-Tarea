@@ -278,7 +278,7 @@ body {
   margin-top: 8px;
 }
 
-.rating__number {  
+.product__rating{  
   font-size: 14px;
   font-weight: 400;
   line-height: 17.6px;
@@ -290,7 +290,7 @@ body {
   position: relative;
 }
 
-.product__carousel {
+.carousel__product {
   position: relative;
   max-width: 773px;
   width: 100%;
@@ -364,7 +364,7 @@ body {
   gap:25px;
 }
 
-.product__card {
+.card {
   position: relative;
   width: 100%;
   height: auto;
@@ -379,16 +379,17 @@ body {
   line-height: 22px;
 }
 
-.product-card__link {
-  display: block;
-  text-decoration: none;
-  color: inherit; 
+.product__card-link{
+  font-size: 0;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
 }
 
-.product__card .product__categoria {
+.card .product__categoria {
   display: block;
   color: #A6A6A6;
-  font-size: 12px;
+  font-size: 12px; 
   line-height: 16px;
   opacity: 0.6;
   font-weight: 600;
@@ -400,7 +401,7 @@ body {
   line-height: 22px;
 }
 
-.product__nombre:hover {
+.product__card-link:hover ~ .product__sales .product__nombre{
   color: rgb(114, 164, 233);
 }
 
@@ -430,11 +431,12 @@ body {
   border-radius: 4px 0px 0px 4px;
 }
 
-.product__entrega:hover {
-  color: #ef1603;
+.product__card-link:hover ~ .product__sales .product__entrega{
+  color: #efac03;
 }
 
-.img__product {
+
+.product__img{
   display: flex;
   justify-content: flex-end;
 }
@@ -453,7 +455,7 @@ body {
     margin-left: 39px;
   }
 
-  .product__card {
+  .card {
     width: 253px;
     height: 265px;
     padding: 0px 52px 49px 12px;
@@ -479,7 +481,7 @@ body {
     margin-bottom: 151.1px;
   }
 
-  .img__product {
+  .product__img{
     display: flex;
     margin-left: 3px;
     width: 204px;
@@ -625,4 +627,43 @@ h3 {
   .next__card {
     right: -55px;
   }
+}
+
+.icons{
+  display: flex;
+  background: #FFFFFF;
+}
+
+.icons__information{
+  max-width:1400px;
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:20px;
+}
+
+.funcionalidades {
+  border-radius: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  padding: 50px;
+  margin: solid 1px black;
+
+}
+
+.img__funcionalidad{
+  position: relative;
+  overflow: hidden;
+  background-color:#FFCCB4;
+  width: 86.59px;
+  height: 103.72px;
+  border-radius: 12px;
+  padding: 25px 30px;
+}
+
+.Saber__mas{
+	margin-top: 20px;
+ color: #D14D41;
 }
