@@ -500,7 +500,7 @@ body {
   position: relative;
 }
 
-.categories__title  { 
+.categories__title { 
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -598,7 +598,7 @@ body {
     max-width: 720px;
   }
 
-  h3 { 
+  .categories__title { 
     margin: 0px;
   }
   .categories__products-shoppings {
