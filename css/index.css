@@ -500,7 +500,7 @@ body {
   position: relative;
 }
 
-h3 { 
+.categories__title  { 
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
