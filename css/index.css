@@ -312,8 +312,8 @@ body {
   background-position: center;
 }
 
-.js-prev,
-.js-next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -326,11 +326,11 @@ body {
   height: 45px;
 }
 
-.js-prev {
+.prev {
   left: 10px;
 }
 
-.js-next {
+.next {
   right: 10px;
 }
 
@@ -342,7 +342,7 @@ body {
   justify-content: center;
 }
 
-.js-dot {
+.dot {
   height: 8px;
   width: 16px;
   margin: 0 5px;
@@ -351,7 +351,7 @@ body {
   border: none;
 }
 
-.js-dot.active {
+.dot--active {
   background-color: white;
   width: 24px;
   height: 8px;
@@ -467,11 +467,11 @@ body {
     height: 563px;
   }
 
-  .js-prev {
+  .prev {
     left: -20px;
   }
 
-  .js-next {
+  .next {
     right: -20px;
   }
 
@@ -516,7 +516,7 @@ h3 {
   position: relative;
 }
 
-.js-categories-products-shoppings {
+.categories__products-shoppings {
   padding: 20px 0;
   display: flex;
   transition: transform 0.08s ease-in-out;
@@ -525,7 +525,7 @@ h3 {
 }
 
 
-.js-categories-card {
+.categories__card {
   border-radius: 8px;
   position: relative;
   background-size: cover;
@@ -566,8 +566,8 @@ h3 {
   color: rgb(114, 164, 233);
 }
 
-.js-prev-card, 
-.js-next-card{
+.prev__card, 
+.next__card{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -581,12 +581,12 @@ h3 {
   border: 2px 0px 0px 0px;
 }
 
-.js-prev-card {
+.prev__card {
   left: 10px;
   color: black;
 }
 
-.js-next-card {
+.next__card {
   right: 10px;
   color: black;
 }
@@ -601,11 +601,11 @@ h3 {
   h3 { 
     margin: 0px;
   }
-  .js-categories-products-shoppings {
+  .categories__products-shoppings {
     grid-template-columns: 1fr 1fr;
   }
 
-  .js-categories-card {
+  .categories__card {
     height: 200px;
   }
 }
@@ -615,21 +615,21 @@ h3 {
     max-width: 1350px;
   }
 
-  .js-categories-products-shoppings {
+  .categories__products-shoppings {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24.98px;
   }
 
-  .js-categories-card {
+  .categories__card {
     width: 318.55px;
     height: 206.12px;
   }
   
-  .js-prev-card {
+  .prev__card {
     left: -50px;
   }
 
-  .js-next-card {
+  .next__card {
     right: -55px;
   }
 }
