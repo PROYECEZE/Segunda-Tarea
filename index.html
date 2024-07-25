@@ -75,19 +75,19 @@
     <section class="product">
       <div class="carousel">
         <div class="carousel__product">
-          <div class="carousel__img">
-            <div class="carousel__item product-banner" style="background-image: url('image/Banner.jpg')"></div>
-            <div class="carousel__item product-banner" style="background-image: url('image/Banner.jpg')"></div>
-            <div class="carousel__item product-banner" style="background-image: url('image/Banner.jpg')"></div>
+          <div class="carousel__img js-carousel-img">
+            <div class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')"></div>
+            <div class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')"></div>
+            <div class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')"></div>
           </div>
           <div class="indicators">
-            <button type="button" class="dot js-go-to-slide" data-slide="0"></button>
-            <button type="button" class="dot js-go-to-slide" data-slide="1"></button>
-            <button type="button" class="dot js-go-to-slide" data-slide="2"></button>
+            <button type="button" class="js-dot js-go-to-slide" data-slide="0"></button>
+            <button type="button" class="js-dot js-go-to-slide" data-slide="1"></button>
+            <button type="button" class="js-dot js-go-to-slide" data-slide="2"></button>
           </div>
         </div>
-        <button class="prev js-move-slide" data-direction="-1">&#10094;</button>
-        <button class="next js-move-slide" data-direction="1">&#10095;</button>
+        <button class="js-prev js-move-slide" data-direction="-1">&#10094;</button>
+        <button class="js-next js-move-slide" data-direction="1">&#10095;</button>
       </div>
       <div class="product__derecha">
         <div class="card">
@@ -164,182 +164,6 @@
         </div>
       </div>
     </section>
-    <!--
-    <section class="categories">
-      <div class="carousel__categories">
-        <h3>Categorías para ti </h3>
-        <div class="categories__products">
-          <div class="categories__products-shoppings">
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/Refrigerators.png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Refrigeradores </p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/swimming pool.png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Piscinas</p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/headphones .png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Audífonos</p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card">
-                <div class="img__producto">
-                  <img src="image/Lamps.png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Lámparas</p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/Refrigerators.png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Refrigeradores </p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/swimming pool.png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Piscinas</p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/headphones .png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Audífonos</p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="categories__link">
-              <div class="card__baner">
-                <div class="img__producto">
-                  <img src="image/Lamps.png" alt="">
-                </div>
-                <div class="text__banner">
-                  <p>Lámparas</p>
-                  <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.89343 13.4746H20.8934" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M14.8934 6.96555L20.8934 13.4746L14.8934 19.9836" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <button class="prev__card js-moved-slide" data-direction="-1">&#10094;</button>
-        <button class="next__card js-moved-slide" data-direction="1">&#10095;</button>
-      </div>
-    </section>
-    <section>
-      <div class="icons">
-        <div class="icons__information container">
-        <div class="funcionalidades" >
-          <div class="img__funcionalidad">
-            <img src="image/Shield.png" alt="">
-          </div>
-          <div class="texto-banner">
-            <p>Garantía Extendida</p>
-            <br>
-            <a href="#" class="Saber__mas">Saber más</a>
-          </div>
-          
-        </div>
-        <div class="funcionalidades" >
-          <div class="img__funcionalidad">
-            <img src="image/DoitPunt.png" alt="">
-          </div>
-          <div class="texto__banner">
-            <p>Garantía Extendida</p>
-            <br>
-            <a href="#" class="Saber__mas">Saber más</a>
-          </div>
-          
-        </div>
-        <div class="funcionalidades" >
-          <div class="img__funcionalidad">
-            <img src="image/Box.png" alt="">
-          </div>
-          <div class="texto__banner">
-            <p>Garantía Extendida</p>
-            <br>
-            <a href="#" class="Saber__mas">Saber más</a>
-          </div>
-          
-        </div>
-        <div class="funcionalidades" >
-          <div class="img__funcionalidad">
-            <img src="image/Employee.png" alt="">
-          </div>
-          <div class="texto__banner">
-            <p>Garantía Extendida</p>
-            <br>
-            <a href="#" class="Saber__mas">Saber más</a>
-          </div>
-          
-          </div>
-        </div>
-        </div>
-    
-    </section>
-    -->
   </main>
   <footer></footer>
   <script src="index.js"></script>

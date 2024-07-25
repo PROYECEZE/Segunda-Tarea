@@ -1,7 +1,7 @@
 let slideIndex = 0;
 
 function moveSlide(n) {
-  const slides = document.querySelectorAll('.carousel__item');
+  const slides = document.querySelectorAll('.js-carousel-item');
   const totalSlides = slides.length;
 
   slideIndex += n;
@@ -23,14 +23,14 @@ function currentSlide(n) {
 }
 
 function updateSlidePosition() {
-  const slides = document.querySelectorAll('.carousel__item');
+  const slides = document.querySelectorAll('.js-carousel-item');
   const slideWidth = slides[0].offsetWidth;
   const offset = -slideIndex * slideWidth;
-  document.querySelector('.carousel__img').style.transform = `translateX(${offset}px)`;
+  document.querySelector('.js-carousel-img').style.transform = `translateX(${offset}px)`;
 }
 
 function updateDots() {
-  const dots = document.querySelectorAll('.dot');
+  const dots = document.querySelectorAll('.js-dot');
   dots.forEach((dot, index) => {
     dot.classList.toggle('active', index === slideIndex);
   });
@@ -40,16 +40,9 @@ window.addEventListener('resize', updateSlidePosition);
 
 // indicators //
 
-function updateDots() {
-  const dots = document.querySelectorAll('.dot');
-  dots.forEach((dot, index) => {
-    dot.classList.toggle('active', index === slideIndex);
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
-  document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+  document.querySelector('.js-prev').addEventListener('click', () => moveSlide(-1));
+  document.querySelector('.js-next').addEventListener('click', () => moveSlide(1));
 
   document.querySelectorAll('.js-go-to-slide').forEach(button => {
     button.addEventListener('click', (event) => {
@@ -61,31 +54,3 @@ document.addEventListener('DOMContentLoaded', () => {
   updateDots(); 
 });
 
-// Width of each card plus gap
-
-document.addEventListener('DOMContentLoaded', function() {
-  const slides = document.querySelector('.categories__products-shoppings');
-  const slideWidth = document.querySelector('.card__baner').offsetWidth + 24.98; 
-  let currentPosition = 0;
-
-  document.querySelectorAll('.js-moved-slide').forEach(button => {
-    button.addEventListener('click', function() {
-      const direction = parseInt(this.getAttribute('data-direction'));
-      const maxPosition = (slides.children.length - 4) * slideWidth;
-
-      if (direction === -1) {
-        currentPosition -= slideWidth;
-        if (currentPosition < 0) {
-          currentPosition = maxPosition;
-        }
-      } else {
-        currentPosition += slideWidth;
-        if (currentPosition > maxPosition) {
-          currentPosition = 0;
-        }
-      }
-
-      slides.style.transform = `translateX(-${currentPosition}px)`;
-    });
-  });
-});
