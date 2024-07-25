@@ -312,8 +312,8 @@ body {
   background-position: center;
 }
 
-.js-prev,
-.js-next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -326,11 +326,11 @@ body {
   height: 45px;
 }
 
-.js-prev {
+.prev {
   left: 10px;
 }
 
-.js-next {
+.next {
   right: 10px;
 }
 
@@ -342,7 +342,7 @@ body {
   justify-content: center;
 }
 
-.js-dot {
+.dot {
   height: 8px;
   width: 16px;
   margin: 0 5px;
@@ -351,7 +351,7 @@ body {
   border: none;
 }
 
-.js-dot.active {
+.dot--active {
   background-color: white;
   width: 24px;
   height: 8px;
@@ -467,11 +467,11 @@ body {
     height: 563px;
   }
 
-  .js-prev {
+  .prev {
     left: -20px;
   }
 
-  .js-next {
+  .next {
     right: -20px;
   }
 

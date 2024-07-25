@@ -32,7 +32,7 @@ function updateSlidePosition() {
 function updateDots() {
   const dots = document.querySelectorAll('.js-dot');
   dots.forEach((dot, index) => {
-    dot.classList.toggle('active', index === slideIndex);
+    dot.classList.toggle('dot--active', index === slideIndex);
   });
 }
 
