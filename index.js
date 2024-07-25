@@ -54,3 +54,31 @@ document.addEventListener('DOMContentLoaded', () => {
   updateDots(); 
 });
 
+// Width of each card plus gap //
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelector('.js-categories-products-shoppings');
+  const slideWidth = document.querySelector('.js-categories-card').offsetWidth + 24.98; 
+  let currentPosition = 0;
+
+  document.querySelectorAll('.js-moved-slide').forEach(button => {
+    button.addEventListener('click', function() {
+      const direction = parseInt(this.getAttribute('data-direction'));
+      const maxPosition = (slides.children.length - 4) * slideWidth;
+
+      if (direction === -1) {
+        currentPosition -= slideWidth;
+        if (currentPosition < 0) {
+          currentPosition = maxPosition;
+        }
+      } else {
+        currentPosition += slideWidth;
+        if (currentPosition > maxPosition) {
+          currentPosition = 0;
+        }
+      }
+
+      slides.style.transform = `translateX(-${currentPosition}px)`;
+    });
+  });
+});

@@ -488,3 +488,149 @@ body {
     height: 117px;
   }
 }
+
+/* Movil style */
+.carousel__categories {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.categories {
+  position: relative;
+}
+
+h3 { 
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1%;
+  text-align: left;
+  color: #363535;
+  margin-left: 20px;
+}
+
+
+.categories__products {
+  overflow: hidden;
+  position: relative;
+}
+
+.js-categories-products-shoppings {
+  padding: 20px 0;
+  display: flex;
+  transition: transform 0.08s ease-in-out;
+  grid-template-columns: 1fr;
+  gap:24.98px;
+}
+
+
+.js-categories-card {
+  border-radius: 8px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+  width: 318.55px;
+  height: 206.12px;
+}
+
+.categories__link {
+  font-size: 0;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.categories__img {
+  border-radius: 8px;
+}
+
+
+.categories__text {
+  background-color: white;
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 8px; 
+  line-height: 30px;
+  color: #363535;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  letter-spacing: 1%;
+  align-items: center;
+}
+
+.categories__link:hover ~ .categories__text {
+  color: rgb(114, 164, 233);
+}
+
+.js-prev-card, 
+.js-next-card{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid black; 
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 43px;
+  height: 45px;
+  border: 2px 0px 0px 0px;
+}
+
+.js-prev-card {
+  left: 10px;
+  color: black;
+}
+
+.js-next-card {
+  right: 10px;
+  color: black;
+}
+
+
+/* Desktop style */
+@media (min-width: 768px) {
+  .carousel__categories {
+    max-width: 720px;
+  }
+
+  h3 { 
+    margin: 0px;
+  }
+  .js-categories-products-shoppings {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .js-categories-card {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel__categories {
+    max-width: 1350px;
+  }
+
+  .js-categories-products-shoppings {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24.98px;
+  }
+
+  .js-categories-card {
+    width: 318.55px;
+    height: 206.12px;
+  }
+  
+  .js-prev-card {
+    left: -50px;
+  }
+
+  .js-next-card {
+    right: -55px;
+  }
+}
+
