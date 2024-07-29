@@ -634,7 +634,7 @@ body {
   }
 }
 
-/* Movil style */
+/* Estilo para móvil */
 .functionality {
   display: flex;
   flex-direction: column;
@@ -642,12 +642,25 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: relative;
 }
 
 .functionality__information {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.functionality__carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.functionality__carousel {
+  display: flex;
+  transition: transform 0.3s ease;
 }
 
 .functionality__icons {
@@ -657,7 +670,10 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
-  gap: 13.32px;
+  gap: 40px;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .functionality__fund {
@@ -688,7 +704,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2; 
+  z-index: 2;
 }
 
 .functionality__text {
@@ -716,13 +732,51 @@ body {
   color: #D14D41;
 }
 
-.functionality__bord {
-  border: #f5f5f5 solid 1px;
-  width: 100%;
-  margin: 10px 0;
+.carousel__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
-/* Desktop style */
+.carousel__prev,
+.carousel__next {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #D14D41;
+  opacity: 0.2;
+}
+
+.carousel__indicators {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel__indicator {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #fadfdc;
+  border: none;
+}
+
+.carousel-indicator--active {
+  background-color: #D14D41;
+  outline: #D14D41;
+  border: none;
+}
+
+/* Estilo para escritorio */
 @media (min-width: 768px) {
   .functionality {
     height: 210px;
@@ -731,12 +785,14 @@ body {
   .functionality__information {
     flex-direction: row;
     justify-content: space-between;
-    gap: 48px;
   }
 
   .functionality__icons {
     flex-direction: row;
     align-items: center;
+    min-width: auto;
+    padding: 0;
+    gap: 13.32px;
   }
 
   .functionality__text {
@@ -749,8 +805,18 @@ body {
   }
 
   .functionality__bord {
+    border: #f5f5f5 solid 1px;
     height: 105px;
-    width: auto;
-    margin: 0;
+
   }
+
+  .carousel__controls,
+  .carousel__indicators {
+    display: none;
+  }
+
+  .functionality__carousel {
+    gap:48px;
+  }
+
 }

@@ -82,3 +82,77 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const icons = document.querySelectorAll('.functionality__icons');
+  const indicators = document.querySelectorAll('.carousel__indicator');
+  const leftArrow = document.querySelector('.carousel__arrow--left');
+  const rightArrow = document.querySelector('.carousel__arrow--right');
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    icons.forEach((icon, i) => {
+      icon.style.display = i === index ? 'flex' : 'none';
+    });
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % icons.length;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + icons.length) % icons.length;
+    showSlide(currentIndex);
+  }
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+      currentIndex = index;
+      showSlide(currentIndex);
+    });
+  });
+
+  leftArrow.addEventListener('click', prevSlide);
+  rightArrow.addEventListener('click', nextSlide);
+
+  showSlide(currentIndex);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('.js-functionality-carousel');
+  const icons = document.querySelectorAll('.js-functionality-icons');
+  const indicators = document.querySelectorAll('.js-carousel-indicator');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const offset = -index * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle('carousel-indicator--active', i === index);
+    });
+  }
+
+  document.querySelector('.js-carousel-prev').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : icons.length - 1;
+    showSlide(currentIndex);
+  });
+
+  document.querySelector('.js-carousel-next').addEventListener('click', () => {
+    currentIndex = (currentIndex < icons.length - 1) ? currentIndex + 1 : 0;
+    showSlide(currentIndex);
+  });
+
+  indicators.forEach((indicator, i) => {
+    indicator.addEventListener('click', () => {
+      currentIndex = i;
+      showSlide(currentIndex);
+    });
+  });
+
+  showSlide(currentIndex);
+});
