@@ -82,3 +82,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+// carousel of icons//
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('.js-functionality-carousel');
+  const icons = document.querySelectorAll('.js-functionality-icons');
+  const indicators = document.querySelectorAll('.js-carousel-indicator');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const offset = -index * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle('carousel__indicator--active', i === index);
+    });
+  }
+
+  document.querySelector('.js-carousel-prev').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : icons.length - 1;
+    showSlide(currentIndex);
+  });
+
+  document.querySelector('.js-carousel-next').addEventListener('click', () => {
+    currentIndex = (currentIndex < icons.length - 1) ? currentIndex + 1 : 0;
+    showSlide(currentIndex);
+  });
+
+  indicators.forEach((indicator, i) => {
+    indicator.addEventListener('click', () => {
+      currentIndex = i;
+      showSlide(currentIndex);
+    });
+  });
+
+  showSlide(currentIndex);
+});
