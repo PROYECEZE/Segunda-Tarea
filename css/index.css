@@ -770,7 +770,7 @@ body {
   border: none;
 }
 
-.carousel-indicator--active {
+.carousel__indicator--active {
   background-color: #D14D41;
   outline: #D14D41;
   border: none;
@@ -807,7 +807,6 @@ body {
   .functionality__bord {
     border: #f5f5f5 solid 1px;
     height: 105px;
-
   }
 
   .carousel__controls,
@@ -818,5 +817,4 @@ body {
   .functionality__carousel {
     gap:48px;
   }
-
 }
