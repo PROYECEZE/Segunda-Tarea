@@ -818,3 +818,143 @@ body {
     gap:48px;
   }
 }
+
+.most-popular{
+  max-width: 1350px;
+  width: 100%;
+  margin: auto;
+}
+
+.most-popular__title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1%;
+  color:#363535;
+  margin-top: 51px;
+  margin-bottom: 20px;
+}
+ 
+.most-popular__products{
+  display: flex;
+  gap:31px;
+}
+
+
+.most-popular__left {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:0px;
+  width: 773px;
+  height: 610px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+}
+
+
+.most-popular__card {
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+  width: 210px;
+  height: 266px;
+
+}
+
+
+.most-popular__img{
+  width: 209.51px;
+  height: 169.05px;
+  display: flex;
+  justify-content: center;
+}
+
+.most-popular__text{
+  height: 80%;
+}
+
+.most-popular__name{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color:#716C6C;
+}
+.most-popular__right {
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+  width: 547px;
+  height: 610.31px;
+}
+
+.most-popular__do{
+  font-weight: lighter;
+  font-size: 12px;
+  color: #A6A6A6;
+}
+
+.most-popular__right-total{
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.most-popular__price{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.63px;
+  text-align: left;
+  color:#292727;
+  margin: 0;
+}
+
+.most-popular__total {
+  display: flex;
+  align-items: center;
+}
+
+.most-popular__prices{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.14px;
+  text-align: left;
+  color: #D14D41;
+}
+
+.most-popular__number{ 
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 17.6px;
+  text-align: left;
+  color: #A6A6A6;
+}
+
+
+.most-popular__calification{
+  align-items: center;
+}
+
+.most-popular__star{
+  color: #FDBF00;
+  margin-left: 33px;
+  width: 18.81px;
+  height: 22.51px;
+
+}
+.most-popular__rating{
+  font-size: 16.46px;
+  font-weight: 400;
+  line-height: 20.69px;
+  color: #6C6B6A;
+}
