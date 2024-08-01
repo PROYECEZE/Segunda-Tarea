@@ -864,6 +864,13 @@ body {
   padding: 0px 20px 20px 0px;
 } 
 
+.most-popular__link{
+  font-size: 0;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
 .most-popular__cardd {
   position: relative;
   overflow: hidden;
@@ -918,6 +925,16 @@ body {
   border-radius: 0px;
   padding: 20px 0px 0px 20px;
   border-left: 1px solid #D7D6D6;
+}
+
+
+.most-popular__link:hover ~ .most-popular__text .most-popular__name {
+  color: rgb(114, 164, 233);
+}
+
+
+.most-popular__link:hover ~ .most-popular__text .most-popular__prices{
+color: #6c1e1e;
 }
 
 .most-popular__button{
@@ -1039,8 +1056,7 @@ body {
 
 .most-popular__right {
   border-radius: 10px;
-  border: #D14D41 solid 2px;
-  padding: 20px 0px 20px 20px;
+  padding: 10px 0px 20px 20px;
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -1051,6 +1067,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.most-popular__right:hover{
+  border: #D14D41 solid 2px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .most-popular__right-img {
@@ -1141,7 +1162,7 @@ body {
   height: 72.09px;
   gap: 6px;
   border-radius: 8px;
-  background-color: #D14D41;
+  background-color: #b88782;
   border: none;
   color: #FFFFFF;
   font-size: 14px;
@@ -1150,10 +1171,75 @@ body {
   letter-spacing: 6%;
   margin-top: 13px;
   margin-right: 20px;
+  transition: background-color 0.3s ease;
 }
+
+.most-popular__link:hover ~ .most-popular__bord-botton .most-popular__bord-button {
+  background-color: #D14D41;
+}
+
 
 .arrow{
   width: 16px;
   height: 16px;
   margin-bottom: -3px;
 }
+
+
+.most-popular__right-clo{
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 45px;
+}
+
+.most-popular__right-close, 
+.most-popular__right-check {
+  display: flex;
+  align-items: center;
+}
+
+.most-popular__right-close .most-popular__right-closee,
+.most-popular__right-check .most-popular__right-checkk{
+  width: 21.46px;
+  height: 16.35px;
+  margin-right: 8px;
+}
+
+.Close, 
+.Check {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.02px;
+  text-align: left;
+}
+
+.Close {
+  color: #D8D8D8;
+}
+
+.Check {
+  color: #6C6B6A;
+}
+
+.most-popular__rigth-calification{
+  align-self: flex-end;
+  display: flex;
+  position: absolute;
+  margin-right: 20px;  
+}
+
+.most-popular__rigth-star{
+  color: #FDBF00;
+  width: 18.81px;
+  height: 22.51px;
+}
+
+.most-popular__rigth-rating{
+  font-size: 16.46px;
+  font-weight: 400;
+  line-height: 20.69px;
+  color: #6C6B6A;
+}
+
+
+
