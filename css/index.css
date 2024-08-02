@@ -850,11 +850,7 @@ body {
   border-radius: 12px;
 }
 
-.most-popular__card,
-.most-popular__cardd,
-.most-popular__carddd,
-.most-popular__cardddd,
-.most-popular__carddddd{
+.most-popular__card{
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -863,14 +859,6 @@ body {
   padding: 25px; 
 }
 
-.most-popular__cardddddd{
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  background-color: white;
-  padding: 25px;
-}
 
 .most-popular__link:hover ~ .most-popular__text .most-popular__name {
   color: rgb(114, 164, 233);
@@ -888,25 +876,20 @@ body {
   z-index: 1;
 }
 
-.most-popular__button,
-.most-popular__btton {
-  border: none;
+.most-popular__badge{ 
   color: #FFFFFF;
-  padding: 2px 5px; 
-  border-radius: 4px;
-  position: absolute;
-}
-
-.most-popular__button {
   background: #05B999;
-  width: 73px;
-  height: 20px;
+  padding: 2px 5px;
+  border-radius: 0px 0px 4px 0px;
+  position: absolute;
+  font-size: 14.11px;
+  font-weight: 600;
+  line-height: 14.11px;
 }
 
-.most-popular__btton {
+.most-popular__badge--red {
   background: #EC4C4C;
-  width: 57px;
-  height: 20px;
+  border-radius: 4px;
 }
 
 .most-popular__img {
@@ -929,18 +912,21 @@ body {
   margin-right: 70px;
 }
 
-.most-popular__price {
-  font-size: 16px; 
+.most-popular__prices {
+  font-size: 18px; 
   font-weight: 700;
-  line-height: 20px;
+  line-height: 22px;
   text-align: left;
+  color: #D14D41;
+}
+
+.most-popular__prices--black {
+  font-size: 16px; 
   color: #292727;
 }
 
-.most-popular__pric {
+.most-popular__prices--black-2 {
   font-size: 18px; 
-  font-weight: 700;
-  text-align: left;
   color: #292727;
 }
 
@@ -951,13 +937,6 @@ body {
   margin-top: 20px;
 }
 
-.most-popular__prices {
-  font-size: 18px; 
-  font-weight: 700;
-  line-height: 22px;
-  text-align: left;
-  color: #D14D41;
-}
 
 .most-popular__number {
   font-size: 12px; 
@@ -985,18 +964,7 @@ body {
   color: #6C6B6A;
 }
 
-.most-popular__stard {
-  color: #FDBF00;
-  width: 18px;
-  height: 22px;
-}
 
-.most-popular__ratingd {
-  font-size: 14px; 
-  font-weight: 400;
-  line-height: 18px;
-  color: #6C6B6A;
-}
 
 /* Desktop style left*/
 @media (min-width: 768px) {
@@ -1043,81 +1011,31 @@ body {
     padding: 0px 20px 20px 0px;
   }
     
-  .most-popular__cardd {
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    background-color: white;
-    border-radius: 0px;
-    border-bottom: 1px solid #D7D6D6;
+  .most-popular__card--card-2 {
     padding: 0px 20px 20px 20px;
 }
 
-  .most-popular__carddd {
-    position: relative;
-     overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    background-color: white;
-    border-radius: 0px;
-    border-bottom: 1px solid #D7D6D6;
-    border-left: 1px solid #D7D6D6;
+  .most-popular__card--card-3 {
     padding: 0px 0px 20px 20px;
+    border-right: 0px;
 }
 
-  .most-popular__cardddd {
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    background-color: white;
-    border-radius: 0px;
+  .most-popular__card--card-4 {
     border-right: 1px solid #D7D6D6;
     padding: 20px 20px 0px 0px;
+    border-bottom: 0px;
 }
 
-  .most-popular__carddddd {
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    background-color: white;
-    border-radius: 0px;
+  .most-popular__card--card-5 {
     padding: 20px 20px 0px 20px;
+    border-bottom: 0px;
 }
 
-  .most-popular__cardddddd {
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    background-color: white;
-    border-radius: 0px;
+  .most-popular__card--card-6 {
     padding: 20px 0px 0px 20px;
-    border-left: 1px solid #D7D6D6;
+    border-bottom: 0px;
+    border-right: 0px;
 }
-
-  .most-popular__link:hover ~ .most-popular__text .most-popular__name {
-    color: rgb(114, 164, 233);
-}
-
-
-  .most-popular__link:hover ~ .most-popular__text .most-popular__prices{
-    color: #6c1e1e;
-}
-  .most-popular__button,
-  .most-popular__btton {
-    width: 73.41px;
-    height: 19.7px;
-    padding: 2.35px 4.7px;
-    border-radius: 0px 0px 4px 0px;
-  }
-
-  .most-popular__btton {
-    width: 57.41px;
-  }
-
   .most-popular__img {
     width: 209.51px;
     height: 169.05px;
@@ -1132,14 +1050,6 @@ body {
     margin-right: 70px;
   }
 
-  .most-popular__price {
-    font-size: 18px;
-  }
-
-  .most-popular__pric {
-    font-size: 20px;
-  }
-
   .most-popular__total {
     display: flex;
     align-items: center;
@@ -1147,23 +1057,12 @@ body {
     margin-top: 22px;
   }
 
-  .most-popular__prices {
-    font-size: 20px;
-    line-height: 25.14px;
-  }
-
   .most-popular__number {
     font-size: 14px;
-  }
-
-  .most-popular__ratingd {
-    font-size: 16.46px;
-    line-height: 20.69px;
   }
 }
 
 /* Mobile-first right*/
-
 .most-popular__right {
   border-radius: 10px;
   padding: 10px 10px 20px 10px;
@@ -1254,6 +1153,8 @@ body {
   border: 0.5px solid #D8D8D8;
   margin-top: 15.35px;
 }
+
+
 .most-popular__bord-botton {
   display: flex;
   justify-content: flex-end;
@@ -1261,11 +1162,14 @@ body {
 }
 
 .most-popular__bord-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 268.49px;
   height: 72.09px;
   gap: 6px;
   border-radius: 8px;
-  border: none;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
@@ -1273,7 +1177,6 @@ body {
   letter-spacing: 6%;
   margin-top: 13px;
   margin-right: 20px;
-  transition: background-color 0.3s ease;
   background-color: #D14D41;
 }
 
@@ -1284,19 +1187,19 @@ body {
   margin-bottom: -3px;
 }
 
-.most-popular__right-clo {
+.most-popular__right-method {
   align-self: flex-start;
   margin-top: 45px;
 }
 
-.most-popular__right-close,
-.most-popular__right-check {
+.most-popular__right-shipping,
+.most-popular__right-removal {
   display: flex;
   align-items: center;
 }
 
-.most-popular__right-close .most-popular__right-closee,
-.most-popular__right-check .most-popular__right-checkk {
+.most-popular__right-shipping .most-popular__right-close,
+.most-popular__right-removal .most-popular__right-check {
   width: 21.46px;
   height: 16.35px;
   margin-right: 8px;
@@ -1383,40 +1286,14 @@ body {
     width: 515.84px;
   }
 
-  .most-popular__bord-button {
-    width: 268.49px;
-    height: 72.09px;
-  }
-
   .most-popular__rigth-calification {
     margin-right: 20px;
   }
-  .most-popular__bord-botton {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .most-popular__bord-button{
-    width: 268.49px;
-    height: 72.09px;
-    gap: 6px;
-    border-radius: 8px;
-    border: none;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17.6px;
-    letter-spacing: 6%;
-    margin-top: 13px;
-    margin-right: 20px;
-    transition: background-color 0.3s ease;
-    background-color: #D14D41;
-  }
 
-  .most-popular__right-clo {
+  .most-popular__right-method {
     position: absolute;
     align-self: flex-start;
     margin-top: 45px;
   }
 }
+
