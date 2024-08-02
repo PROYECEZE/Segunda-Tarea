@@ -1307,39 +1307,89 @@ body {
   line-height: 30px;
   letter-spacing: 1%;
   color: #363535;
-  margin-top: 28px;
-  margin-left: 15px;
-  margin-bottom: 28px;
-  text-align: left;
+  margin: 28px auto;
   max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
 }
 
-.popular-brands__background{
+.popular-brands__background {
   background-color: #EEEEF6;
 }
 
+
+
+
+/* Estilos para móvil */
 .popular-brands__icons {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 40px 0px 40px;
-  gap: 44px;
-  max-width: 1350px;
-  margin: 0 auto;  
+  padding: 40px 0;
+  gap: 10px;
 }
 
-.popular-brands__link{
-  font-size: 0;
-  inset: 0;
+.popular-brands__carousel {
+  display: flex;
+  gap: 44px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+
+.popular-brands__link {
   position: absolute;
   z-index: 1;
+  inset: 0;
+  font-size: 0;
 }
 
+
 .popular-brands__img {
-  width: 221px;
-  height: 121.9px;
-  padding: 0px 17.43px 0px 17.68px;
+  width: 150px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  scroll-snap-align: center;
 }
+
+/* Estilos para escritorio */
+@media (min-width: 768px) {
+  .popular-brands__carousel {
+    overflow: visible;
+  }
+
+  .popular-brands__title { 
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 600; 
+  line-height: 30px;
+  letter-spacing: 1%;
+  color: #363535;
+  margin: 28px auto;
+  max-width: 1300px;
+  }
+
+  .popular-brands__img {
+    width: 221px;
+    height: 121.9px;
+  }
+
+  .popular-brands__icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 40px;
+    gap: 44px;
+    max-width: 1350px;
+    margin: 0 auto;  
+  }
+  
+
+  .popular-brands__link{
+    font-size: 0;
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+  }
+}
+

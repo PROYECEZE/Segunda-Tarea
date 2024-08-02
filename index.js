@@ -119,3 +119,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   showSlide(currentIndex);
 });
+
+document.querySelector('.popular-brands__carousel').addEventListener('mousedown', function(e) {
+  e.preventDefault();
+  let startX = e.pageX - this.offsetLeft;
+  let scrollLeft = this.scrollLeft;
+
+  function onMouseMove(e) {
+    const x = e.pageX - this.offsetLeft;
+    const walk = (x - startX) * 3; // Ajusta la velocidad
+    this.scrollLeft = scrollLeft - walk;
+  }
+
+  function onMouseUp() {
+    this.removeEventListener('mousemove', onMouseMove);
+    this.removeEventListener('mouseup', onMouseUp);
+  }
+
+  this.addEventListener('mousemove', onMouseMove);
+  this.addEventListener('mouseup', onMouseUp);
+});
