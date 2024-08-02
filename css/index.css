@@ -861,7 +861,12 @@ body {
 
 
 .most-popular__link:hover ~ .most-popular__text .most-popular__name {
-  color: rgb(114, 164, 233);
+  color: #72A4E9;
+}
+
+
+.most-popular__link:hover ~ .most-popular__text .most-popular__prices{
+  color: #5e0606;
 }
 
 .most-popular__link {
@@ -1193,8 +1198,8 @@ body {
   align-items: center;
 }
 
-.most-popular__right-shipping .most-popular__right-close,
-.most-popular__right-removal .most-popular__right-check {
+.most-popular__right-close,
+.most-popular__right-check {
   width: 21.46px;
   height: 16.35px;
   margin-right: 8px;
@@ -1291,4 +1296,3 @@ body {
     margin-top: 45px;
   }
 }
-
