@@ -818,3 +818,481 @@ body {
     gap:48px;
   }
 }
+
+
+/* Mobile-first left*/
+.most-popular {
+  width: 100%;
+  margin: auto;
+  padding: 20px; 
+}
+
+.most-popular__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -1%;
+  color: #363535;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.most-popular__products {
+  display: flex;
+  flex-direction: column; 
+  gap: 31px;
+}
+
+.most-popular__left {
+  display: flex;
+  flex-direction: column; 
+  gap: 2px;
+  border-radius: 12px;
+}
+
+.most-popular__card{
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+  padding: 25px; 
+}
+
+
+.most-popular__link:hover ~ .most-popular__text .most-popular__name {
+  color: #72A4E9;
+}
+
+
+.most-popular__link:hover ~ .most-popular__text .most-popular__prices{
+  color: #5e0606;
+}
+
+.most-popular__link {
+  font-size: 0;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.most-popular__badge{ 
+  color: #FFFFFF;
+  background: #05B999;
+  padding: 2px 5px;
+  border-radius: 0px 0px 4px 0px;
+  position: absolute;
+  font-size: 14.11px;
+  font-weight: 600;
+  line-height: 14.11px;
+}
+
+.most-popular__badge--red {
+  background: #EC4C4C;
+  border-radius: 4px;
+}
+
+.most-popular__img {
+  width: 100%; 
+  height: auto; 
+  display: flex;
+  justify-content: center;
+}
+
+.most-popular__text {
+  height: auto; 
+}
+
+.most-popular__name {
+  font-size: 18px; 
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #716C6C;
+  margin-right: 70px;
+}
+
+.most-popular__prices {
+  font-size: 18px; 
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: #D14D41;
+}
+
+.most-popular__prices--black {
+  font-size: 16px; 
+  color: #292727;
+}
+
+.most-popular__prices--black-2 {
+  font-size: 18px; 
+  color: #292727;
+}
+
+.most-popular__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.most-popular__number {
+  font-size: 12px; 
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #A6A6A6;
+}
+
+.most-popular__calification {
+  align-items: center;
+}
+
+.most-popular__star {
+  color: #FDBF00;
+  width: 18px;
+  height: 22px;
+}
+
+.most-popular__rating {
+  font-size: 14px; 
+  font-weight: 400;
+  line-height: 18px;
+  color: #6C6B6A;
+}
+
+
+
+/* Desktop style left*/
+@media (min-width: 768px) {
+  .most-popular {
+    max-width: 1350px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+  }
+
+  .most-popular__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1%;
+    color: #363535;
+    margin-top: 51px;
+    margin-bottom: 20px;
+  }
+
+  .most-popular__products {
+    flex-direction: row; 
+  }
+
+  .most-popular__left {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0px;
+    flex-basis: 773px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 25px 30px; 
+  }
+
+  .most-popular__card {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+    border-radius: 0px;
+    border-bottom: 1px solid #D7D6D6;
+    border-right: 1px solid #D7D6D6;
+    padding: 0px 20px 20px 0px;
+  }
+    
+  .most-popular__card--card-2 {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .most-popular__card--card-3 {
+    padding: 0px 0px 20px 20px;
+    border-right: 0px;
+  }
+
+  .most-popular__card--card-4 {
+    border-right: 1px solid #D7D6D6;
+    padding: 20px 20px 0px 0px;
+    border-bottom: 0px;
+  }
+
+  .most-popular__card--card-5 {
+    padding: 20px 20px 0px 20px;
+    border-bottom: 0px;
+  }
+
+  .most-popular__card--card-6 {
+    padding: 20px 0px 0px 20px;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+  .most-popular__img {
+    width: 209.51px;
+    height: 169.05px;
+  }
+
+  .most-popular__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color:#716C6C;
+    margin-right: 70px;
+  }
+
+  .most-popular__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+  }
+
+  .most-popular__number {
+    font-size: 14px;
+  }
+}
+
+/* Mobile-first right*/
+.most-popular__right {
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #D14D41 solid 2px;
+}
+
+
+
+.most-popular__right-img {
+  width: 100%; 
+  height: auto; 
+}
+
+.most-popular__right-text {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.most-popular__do {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: #A6A6A6;
+}
+
+.most-popular__right-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  width: 100%;
+}
+
+.most-popular__right-name {
+  font-size: 20px; 
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -1%;
+  text-align: left;
+  color: #6C6B6A;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.most-popular__right-price {
+  font-size: 24px; 
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #292727;
+}
+
+.most-popular__prioridad {
+  width: 14.76px;
+  height: 14.76px;
+  margin-left: 15px;
+}
+
+.most-popular__rigiht-entrega {
+  color: #D14D41;
+  font-size: 14.76px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18.55px;
+  text-align: left;
+  background-color: #FAEDEC;
+  width: auto; 
+  padding: 7.38px 12px;
+  gap: 4px;
+  border-radius: 4.92px 0px 0px 4.92px;
+  align-items: center;
+  display: flex;
+
+}
+
+.most-popular__bord {
+  width: 100%; 
+  border: 0.5px solid #D8D8D8;
+  margin-top: 15.35px;
+}
+
+
+.most-popular__bord-botton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.most-popular__bord-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 268.49px;
+  height: 72.09px;
+  gap: 6px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.6px;
+  letter-spacing: 6%;
+  margin-top: 13px;
+  margin-right: 20px;
+  background-color: #D14D41;
+}
+
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  margin-bottom: -3px;
+}
+
+.most-popular__right-method {
+  align-self: flex-start;
+  margin-top: 45px;
+}
+
+.most-popular__right-shipping,
+.most-popular__right-removal {
+  display: flex;
+  align-items: center;
+}
+
+.most-popular__right-close,
+.most-popular__right-check {
+  width: 21.46px;
+  height: 16.35px;
+  margin-right: 8px;
+}
+
+.Close,
+.Check {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.02px;
+  text-align: left;
+}
+
+.Close {
+  color: #D8D8D8;
+}
+
+.Check {
+  color: #6C6B6A;
+}
+
+.most-popular__rigth-calification {
+  align-self: flex-end;
+  display: flex;
+  position: absolute;
+  margin-right: 20px;
+}
+
+.most-popular__rigth-star {
+  color: #FDBF00;
+  width: 18.81px;
+  height: 22.51px;
+}
+
+.most-popular__rigth-rating {
+  font-size: 16.46px;
+  font-weight: 400;
+  line-height: 20.69px;
+  color: #6C6B6A;
+}
+
+/* Desktop style right */
+
+@media (min-width: 768px) {
+  .most-popular__right {
+    border-radius: 10px;
+    padding: 10px 0px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+    flex-basis: 547px;
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .most-popular__right-img {
+    width: 336.85px;
+    height: 336.85px;
+  }
+
+  .most-popular__right-name {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .most-popular__right-price {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .most-popular__rigiht-entrega {
+    width: 149px;
+    height: 42px;
+    padding: 7.38px 12px;
+    margin-right: -90px;
+  }
+
+  .most-popular__bord {
+    width: 515.84px;
+  }
+
+  .most-popular__rigth-calification {
+    margin-right: 20px;
+  }
+
+  .most-popular__right-method {
+    position: absolute;
+    align-self: flex-start;
+    margin-top: 45px;
+  }
+}
