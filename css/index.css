@@ -864,11 +864,6 @@ body {
   color: rgb(114, 164, 233);
 }
 
-
-.most-popular__link:hover ~ .most-popular__text .most-popular__prices{
-  color: #6c1e1e;
-}
-
 .most-popular__link {
   font-size: 0;
   inset: 0;
@@ -1013,29 +1008,29 @@ body {
     
   .most-popular__card--card-2 {
     padding: 0px 20px 20px 20px;
-}
+  }
 
   .most-popular__card--card-3 {
     padding: 0px 0px 20px 20px;
     border-right: 0px;
-}
+  }
 
   .most-popular__card--card-4 {
     border-right: 1px solid #D7D6D6;
     padding: 20px 20px 0px 0px;
     border-bottom: 0px;
-}
+  }
 
   .most-popular__card--card-5 {
     padding: 20px 20px 0px 20px;
     border-bottom: 0px;
-}
+  }
 
   .most-popular__card--card-6 {
     padding: 20px 0px 0px 20px;
     border-bottom: 0px;
     border-right: 0px;
-}
+  }
   .most-popular__img {
     width: 209.51px;
     height: 169.05px;
