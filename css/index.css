@@ -1296,6 +1296,9 @@ body {
     margin-top: 45px;
   }
 }
+
+
+/* Movil style */
 .popular-brands {
   width: 100%;
   padding: 0;
@@ -1317,9 +1320,6 @@ body {
 }
 
 
-
-
-/* Estilos para móvil */
 .popular-brands__icons {
   display: flex;
   align-items: center;
@@ -1327,14 +1327,16 @@ body {
   gap: 10px;
 }
 
+
 .popular-brands__carousel {
   display: flex;
-  gap: 44px;
+  gap: 20px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  position: relative;
 }
 
+.popular-brands__carousel::-webkit-scrollbar {
+  display: none;
+}
 
 .popular-brands__link {
   position: absolute;
@@ -1345,27 +1347,28 @@ body {
 
 
 .popular-brands__img {
-  width: 150px; /* Ajusta el tamaño según tus necesidades */
+  width: 150px;
   height: auto;
   scroll-snap-align: center;
 }
 
-/* Estilos para escritorio */
+/* Desktop style */
+
 @media (min-width: 768px) {
   .popular-brands__carousel {
     overflow: visible;
   }
 
   .popular-brands__title { 
-  display: flex;
-  justify-content: flex-start;
-  font-size: 20px;
-  font-weight: 600; 
-  line-height: 30px;
-  letter-spacing: 1%;
-  color: #363535;
-  margin: 28px auto;
-  max-width: 1300px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 600; 
+    line-height: 30px;
+    letter-spacing: 1%;
+    color: #363535;
+    margin: 28px auto;
+    max-width: 1300px;
   }
 
   .popular-brands__img {
