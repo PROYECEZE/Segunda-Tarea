@@ -1338,17 +1338,9 @@ body {
   display: none;
 }
 
-.popular-brands__link {
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  font-size: 0;
-}
 
 
 .popular-brands__img {
-  width: 150px;
-  height: auto;
   scroll-snap-align: center;
 }
 
@@ -1385,14 +1377,6 @@ body {
     gap: 44px;
     max-width: 1350px;
     margin: 0 auto;  
-  }
-  
-
-  .popular-brands__link{
-    font-size: 0;
-    inset: 0;
-    position: absolute;
-    z-index: 1;
   }
 }
 
