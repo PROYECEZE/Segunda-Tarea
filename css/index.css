@@ -1378,6 +1378,7 @@ body {
 }
 
 
+/* Movil style */
 .collections {
   display: flex;
   flex-direction: column;
@@ -1495,7 +1496,6 @@ body {
 
 .collections__svg-right {
   height: 221.12px;
-  opacity: 0px;
   position: absolute;
   display: flex;
 }
@@ -1568,6 +1568,8 @@ body {
   background-color: #3432324d;
 }
 
+
+/* Desktop style */
 @media (min-width: 768px) {
   .collections {
     flex-direction: row;
