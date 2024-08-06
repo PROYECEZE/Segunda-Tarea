@@ -487,7 +487,7 @@ body {
     width: 204px;
     height: 117px;
   }
-
+}
 
 /* Movil style */
 .carousel__categories {
@@ -1700,7 +1700,6 @@ body {
   width: 100%;
   background-color: #172755;
   border-top: 16px solid rgba(239, 42, 130, 1);
-  ;
 }
 
 .footer__border {
