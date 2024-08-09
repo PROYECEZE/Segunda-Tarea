@@ -3,16 +3,13 @@
   /* Colors */
   --color-menu-link: #8794BA;
   --color-white: #FFFFFF;
-  --background-color-white: white;
 
   /* sizes */
   --padding-top-large: 48px;
   --padding-bottom-large: 29px;
   --padding-top-small: 18px;
   --padding-bottom-small: 22px;
-
   --padding-pn-card: 10px;
-  --padding-card: 0px 52px 49px 12px;
   --gap-large: 40px;
   --menu-gap: 36px;
   --font-size-medium: 16px;
@@ -35,10 +32,6 @@
   --menu-gap: 36px;
   --font-size-medium: 16px;
   --font-weight:400;
-
-  /* Border Radius */
-  --border-radius-left: 8px 0 0 8px;
-
 
   /* others */
   --header-btn-padding: 10px 53px;
@@ -355,7 +348,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--background-color-white);
+  background-color: var(--color-white);
   border: 1px solid black;
   border-radius: 50%;
   padding: var(--padding-pn-card);
@@ -390,7 +383,7 @@ body {
 }
 
 .dot--active {
-  background-color: var(--background-color-white);
+  background-color: var(--color-white);
   width: 24px;
   height: var(--height-dot);
   border-radius:var(--border-radius-dot);
@@ -408,9 +401,9 @@ body {
   height: var(--height);
   border-radius: 10px;
   padding: var(--padding-pn-card);
-  background-color: var(--background-color-white);
+  background-color: var(--color-white);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
-  padding: var(--padding-card);
+  padding: 0px 52px 49px 12px;
   color: #6C6B6A;
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight);
@@ -496,7 +489,6 @@ body {
   .card {
     width: 253px;
     height: 265px;
-    padding: var(--padding-card);
   }
 
   
@@ -628,7 +620,6 @@ body {
   right: 10px;
   color: black;
 }
-
 
 /* Desktop style */
 @media (min-width: 768px) {
