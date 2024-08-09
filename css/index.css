@@ -10,6 +10,7 @@
   --padding-bottom-large: 29px;
   --padding-top-small: 18px;
   --padding-bottom-small: 22px;
+
   --padding-pn-card: 10px;
   --padding-card: 0px 52px 49px 12px;
   --gap-large: 40px;
@@ -29,6 +30,15 @@
   /* Border Radius */
   --border-radius-left: 8px 0 0 8px;
   --border-radius-dot: 4px;
+
+  --gap-large: 40px;
+  --menu-gap: 36px;
+  --font-size-medium: 16px;
+  --font-weight:400;
+
+  /* Border Radius */
+  --border-radius-left: 8px 0 0 8px;
+
 
   /* others */
   --header-btn-padding: 10px 53px;
