@@ -865,7 +865,7 @@ body {
 .most-popular {
   width: var(--width);
   margin: var(--margin-auto);
-  padding: var(--margin-right-small);
+  padding: var(--twenty-pixel);
 }
 
 .most-popular__title {
@@ -1212,7 +1212,7 @@ body {
   line-height: 17.6px;
   letter-spacing: 6%;
   margin-top: 13px;
-  margin-right: var(--margin-right-small);
+  margin-right: var(--twenty-pixel);
   background-color: var(--color-text-highlight);
 }
 
@@ -1261,7 +1261,7 @@ body {
   align-self: flex-end;
   display: flex;
   position: absolute;
-  margin-right: var(--margin-right-small);
+  margin-right: var(--twenty-pixel);
 }
 
 .most-popular__rigth-star {
@@ -1323,7 +1323,7 @@ body {
   }
 
   .most-popular__rigth-calification {
-    margin-right: var(--margin-right-small);
+    margin-right: var(--twenty-pixel);
   }
 
   .most-popular__right-method {
