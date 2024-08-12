@@ -1,4 +1,3 @@
-
 :root {
   /* Colors */
   --color-menu-link: #8794BA;
@@ -965,7 +964,7 @@ body {
   text-align: left;
   color: var(--color-text-highlight);
 }
----ezequiel
+
 .most-popular__prices--black {
   font-size: var(--font-size-medium); 
   color: var(--color-strong-gray);
