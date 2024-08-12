@@ -51,7 +51,7 @@
   --border-radius-left: 8px 0 0 8px;
   --border-radius-dot: 4px;
   --border-radius-medium: 12px;
-  --borders: 0px;
+  --border-zero: 0px;
 
   /* others */
   --header-btn-padding: 10px 53px;
