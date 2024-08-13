@@ -18,7 +18,6 @@
   --eighteen-pixel: 18px;
   --ten-pixel: 10px;
   --padding-pn-card: 10px;
-  --border-radius-small: 10px;
   --sixteen-pixeles: 16px;
   --eight-pixel: 8px;
   --padding-top-large: 48px;
@@ -52,6 +51,7 @@
   --border-radius-dot: 4px;
   --border-radius-medium: 12px;
   --border-zero: 0px;
+  --border-radius-small: 10px;
 
   /* others */
   --header-btn-padding: 10px 53px;
@@ -1336,13 +1336,13 @@ body {
 
 /* Movil style */
 .popular-brands {
-  width: 100%;
+  width: var(--width);
   padding: 0;
 }
 
 .popular-brands__title {
-  font-size: 20px;
-  font-weight: 600; 
+  font-size: var(--twenty-pixel);
+  font-weight: var(--font-weight-small); 
   line-height: 30px;
   letter-spacing: 1%;
   color: #363535;
@@ -1360,7 +1360,7 @@ body {
   display: flex;
   align-items: center;
   padding: 40px 0;
-  gap: 10px;
+  gap: var(--ten-pixel);
 }
 
 .popular-brands__carousel {
@@ -1387,13 +1387,7 @@ body {
   .popular-brands__title { 
     display: flex;
     justify-content: flex-start;
-    font-size: 20px;
-    font-weight: 600; 
-    line-height: 30px;
-    letter-spacing: 1%;
-    color: #363535;
     margin: 28px auto;
-    max-width: 1300px;
   }
 
   .popular-brands__img {
