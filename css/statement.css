@@ -15,6 +15,7 @@
   --color-star: #FDBF00;
   --color-solid: #D8D8D8;
   --color-turquoise-blue: #172755;
+  --color-pink: #EF2A82;
 
   /* sizes */
   --twenty-pixel: 20px;
@@ -68,7 +69,7 @@
   --header-btn-padding: 10px 53px;
   --header-height: 40px;
   --opacity-two: 0.2;
-  --letter-spacing-negative: -1%;
+  --letter-spacing-negative: -0.01em;
   --letter-spacing-positive: 1%;
   --box-shadowx: 0 4px 8px rgba(0, 0, 0, 0.07);
   --box-shadowy: 0 4px 8px rgba(0, 0, 0, 0.6);

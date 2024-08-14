@@ -79,7 +79,7 @@
 }
 
 .header__search-button {
-  background-color: #EF2A82;
+  background-color: var(--color-pink);
   border: none;
   border-radius: 0px 8px 8px 0px;
   padding: 16px 12px;
