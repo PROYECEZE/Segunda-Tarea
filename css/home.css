@@ -1068,7 +1068,6 @@
 }
 
 /* Desktop style */
-
 @media (min-width: 768px) {
   .popular-brands__carousel {
     overflow: visible;

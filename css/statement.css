@@ -54,6 +54,7 @@
   --line-height-medium: 24px;
   --line-height-large: 28px;
   --max-width: 1181px;
+  --max-widthx: 1370px;
 
   /* Border Radius */
   --border-radius-left: 8px 0 0 8px;
@@ -122,4 +123,3 @@ body {
 .c-white {
   color: var(--color-white);
 }
-
