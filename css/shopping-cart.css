@@ -1,0 +1,118 @@
+
+/* Movil style */
+.shopping-cart {
+  width: var(--width);
+  padding: 0px;
+}
+
+.shopping-cart__top {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 24px;
+  gap: 9px;
+  margin: 0 16px; 
+}
+
+.shopping-cart__arrow-right {
+  width: 8px;
+  height: 8px;
+  border-right: 2.3px solid var(--color-soft-gray);
+  border-bottom: 2.3px solid var(--color-soft-gray);
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+
+.shopping-cart__text {
+  color: var(--color-soft-gray);
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight);
+  line-height: var(--eighteen-pixel);
+  letter-spacing: var(--letter-spacing-negative);
+}
+
+.shopping-cart__bottom__background {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 4px 0px #3635350D;
+}
+
+.shopping-cart__bottom__add {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: var(--padding-vertical);
+}
+
+.shopping-cart__bottom {
+  margin: 0 16px; 
+}
+
+.shopping-cart__bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--twenty-pixel);
+}
+
+.shopping-cart__left-text {
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-bold);
+  line-height: 28px;
+  letter-spacing: var(--letter-spacing-negative);
+  text-align: left;
+  color: var(--color-gray);
+}
+
+.shopping-cart__left-parrafo {
+  font-size: var(--sixteen-pixeles);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height-small);
+  text-align: left;
+  color: var(--color-soft-gray);
+}
+
+.shopping-cart__bottom-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px; 
+  position: relative;
+}
+
+.shopping-cart__right-text {
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight-small);
+  line-height: var(--twenty-pixel);
+  letter-spacing: var(--letter-spacing-negative);
+  text-align: left;
+  color: var(--color-pink);
+}
+
+.shopping-cart__link {
+  font-size: 0;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Desktop style */
+@media (min-width: 768px) {
+  .shopping-cart__top {
+    flex-direction: row; 
+    max-width: var(--max-widthx);
+    margin: 0 auto;
+  }
+
+  .shopping-cart__bottom__add {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .shopping-cart__bottom {
+    max-width: var(--max-widthx);
+    margin: 0 auto;
+  }
+
+  .shopping-cart__bottom-right {
+    margin-top: 0; 
+  }
+}
