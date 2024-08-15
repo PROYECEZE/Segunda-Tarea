@@ -55,7 +55,7 @@
   --line-height-medium: 24px;
   --line-height-large: 28px;
   --max-width: 1181px;
-  --max-widthx: 1370px;
+  --max-widthx: 1450px;
 
   /* Border Radius */
   --border-radius-left: 8px 0 0 8px;
@@ -73,6 +73,7 @@
   --letter-spacing-positive: 1%;
   --box-shadowx: 0 4px 8px rgba(0, 0, 0, 0.07);
   --box-shadowy: 0 4px 8px rgba(0, 0, 0, 0.6);
+  --box-shadowe: 0px 4px 16px 0px rgba(62, 58, 58, 0.3);
   --flex: 1;
 }
 
