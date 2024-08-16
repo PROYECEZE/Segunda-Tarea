@@ -413,6 +413,13 @@
   color: var(--color-white);
 }
 
+.purchase-summary__payment-text{
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight-small);
+  line-height: var(--eighteen-pixel);
+  letter-spacing: 0.06em;
+  text-align: left;
+}
 
 /* Desktop style */
 @media (min-width: 768px) {
@@ -668,10 +675,5 @@
     justify-content: center;
     gap: 7px;
     margin: 0px 20px 0px 20px;
-  }
-
-  .purchase-summary__payment-text{
-    letter-spacing: 0.06em;
-    text-align: left;
   }
 }
