@@ -54,6 +54,7 @@
   --line-height-small: 22px;
   --line-height-medium: 24px;
   --line-height-large: 28px;
+  --line-heightx-large: 30px;
   --max-width: 1181px;
   --max-widthx: 1370px;
 
@@ -70,9 +71,11 @@
   --header-height: 40px;
   --opacity-two: 0.2;
   --letter-spacing-negative: -0.01em;
-  --letter-spacing-positive: 1%;
+  --letter-spacing-positive: 0.01em;
   --box-shadowx: 0 4px 8px rgba(0, 0, 0, 0.07);
   --box-shadowy: 0 4px 8px rgba(0, 0, 0, 0.6);
+  --box-shadowe: 0px 4px 16px 0px rgba(62, 58, 58, 0.3);
+  --box-shadowL: 0px 0px 4px 0px #3635350D;
   --flex: 1;
 }
 
