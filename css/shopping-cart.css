@@ -677,3 +677,166 @@
     margin: 0px 20px 0px 20px;
   }
 }
+
+.can-interest__card {
+  border: 1px solid var(--color-solid);
+  background-color: var(--color-white);
+  padding: 0px 0px 25px 13px;
+  box-shadow: 0px 0px 4px 0px #3635350D;
+  border-radius: 8px; 
+  width: 244.24px;
+}
+
+.can-interest__card--card-4{
+  margin-right: 20px;
+}
+
+
+.can-interest__prod{
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: var(--color-striking-gray);
+}
+
+.can-interest__price{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.14px;
+  text-align: left;
+  color: var(--color-gray);
+  margin-bottom: 9px;
+}
+
+.can-interest__price--price-2{
+  padding-bottom: 22px;
+}
+
+.can-interest__row {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.can-interest__row-text{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: var(--color-striking-gray);
+}
+
+.can-interest__row-text--row-2{
+  color: var(--color-solid);
+}
+
+.can-interest__img {
+  max-width: 100%;
+  display: flex;
+  margin-left: -4px;
+}
+
+.can-interest__img--img-2{
+  margin-left: -40px;
+}
+
+.can-interest__star{
+  width: var(--eighteen-pixel);
+  height: 22px;
+  color: var(--color-star);
+  margin-left: -53px;
+  margin-top: 2px;
+}
+
+
+.can-interest__rating {  
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight);
+  line-height: var(--eighteen-pixel);
+  margin-left: 2px;
+  margin-top: 4px;
+}
+
+.can-interest{
+  width: var(--width);
+  margin: 0 auto;
+}
+
+.can-interes__background{
+  background-color: var(--color-white);
+  margin-top: 20px;
+  padding-top: 32px;
+  height: 450px;
+}
+
+.can-interes__title{
+  padding-top: 40px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.can-interest__product{
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  max-width: 1350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.can-interest__text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: var(--color-soft-gray);
+}
+
+.can-interest__text--text-2{
+  font-size: var(--font-size-small);
+}
+
+.prev__card, 
+.next__card {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-white);
+  border: 1px solid black; 
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 43px;
+  height: 45px;
+  border: 2px 0px 0px 0px;
+}
+
+.prev__card {
+  left: -50px;
+  color: black;
+}
+
+.next__card {
+  right: -55px;
+  color: black;
+}
+
+.can-interest__delivery-day{
+  width: 16px;
+  height: 16px;
+}
+
+.can-interest__delivery {
+  color: var(--color-text-highlight);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight);
+  line-height: var(--sixteen-pixeles);
+  gap: 6px;
+  margin-left: 2px;
+  align-items: center;
+  display: flex;
+  margin-top: 5px;
+}
