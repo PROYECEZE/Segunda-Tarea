@@ -16,6 +16,7 @@
   --color-solid: #D8D8D8;
   --color-turquoise-blue: #172755;
   --color-pink: #EF2A82;
+  --color-black: black;
 
   /* sizes */
   --twenty-pixel: 20px;
@@ -56,6 +57,7 @@
   --line-height-large: 28px;
   --line-heightx-large: 30px;
   --max-width: 1181px;
+  --max-widthL: 1319px;
   --max-widthx: 1370px;
 
   /* Border Radius */

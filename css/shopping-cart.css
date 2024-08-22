@@ -32,7 +32,7 @@
 
 .shopping-cart__bottom__background {
   background-color: var(--color-white);
-  box-shadow: 0px 0px 4px 0px #3635350D;
+  box-shadow: 0px 0px 4px 0px var(--box-shadowL);
   margin-bottom: 26px;
 }
 
@@ -139,7 +139,7 @@
 
 .purchase-summary__send-text{
   font-size: var(--font-size-smalls);
-  font-weight: 400;
+  font-weight: var(--font-weight);
   line-height: var(--eighteen-pixel);
   letter-spacing: var(--letter-spacing-negative);
   text-align: left;
@@ -675,5 +675,234 @@
     justify-content: center;
     gap: 7px;
     margin: 0px 20px 0px 20px;
+  }
+}
+
+
+/* Movil style */
+.can-interest__card{
+  position: relative;
+  border: 1px solid var(--color-solid);
+  background-color: var(--color-white);
+  padding: 0px 0px 25px 13px;
+  box-shadow: 0px 0px 4px 0px var(--box-shadowL);
+  border-radius: var(--eight-pixel); 
+}
+
+.can-interest__card:hover {
+  box-shadow: var(--box-shadowe);
+  border: 1.5px solid var(--color-solid);
+}
+
+.can-interest__card-link{
+  font-size: 0;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.can-interest__prod{
+  display: flex;
+  font-size: var(--sixteen-pixeles);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height-small);
+  text-align: left;
+  color: var(--color-striking-gray);
+}
+
+.can-interest__price{
+  font-size: var(--twenty-pixel);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-medium);
+  text-align: left;
+  color: var(--color-gray);
+  margin-bottom: 9px;
+}
+
+.can-interest__price--margin-top {
+  margin-top: 20px;
+}
+
+.can-interest__row {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.can-interest__row-text{
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight);
+  line-height: var(--sixteen-pixeles);
+  text-align: left;
+  color: var(--color-striking-gray);
+}
+
+.can-interest__row-text--solid{
+  color: var(--color-solid);
+}
+
+.can-interest__img {
+  max-width: var(--width);
+  display: flex;
+  margin-left: -4px;
+}
+
+.can-interest__img--margin-left{
+  margin-left: -10px;
+}
+
+.can-interest__star{
+  width: var(--eighteen-pixel);
+  color: var(--color-star);
+  margin-left: -53px;
+  margin-top: 2px;
+}
+
+.can-interest__star--margin{
+  margin-left: -33px;
+}
+
+.can-interest__star--margin-left{
+  margin-left: -43px;
+}
+
+.can-interest__rating{
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight);
+  line-height: var(--eighteen-pixel);
+  margin-left: 2px;
+  margin-top: 4px;
+}
+
+
+.can-interest__rating--margin-left {  
+  margin-left: 1px;
+}
+
+.can-interest{
+  position: relative;
+}
+
+.can-interes__title{
+  padding-top: 40px;
+  font-size: var(--line-height-medium);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-large);
+  letter-spacing: var(--letter-spacing-negative);
+  text-align: left;
+  color: var(--color-gray);
+  max-width: var(--max-widthx);
+  margin: auto;
+  margin-left: 20px;
+}
+
+.can-interest__background{
+  background-color: var(--color-white);
+  overflow: visible;
+  position: relative;
+  margin: 25px 0px 141px 0px;
+}
+
+.can-interest__content{
+  max-width: 1350px;
+  margin: auto;
+  position: relative;
+}
+
+.can-interest__columns{
+  max-width: var(--max-widthL);
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0px 50px;
+}
+
+.can-interest__product{
+  position: relative;
+  display: flex;
+  gap: 25px;
+  max-width: var(--max-widthL);
+  margin: 0 auto;
+  transition: transform 0.8s ease;
+  padding: 40px 30px 121px;
+}
+
+.can-interest__text{
+  font-size: var(--sixteen-pixeles);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height-small);
+  text-align: left;
+  color: var(--color-soft-gray);
+}
+
+.can-interest__text--font-size{
+  font-size: var(--font-size-small);
+}
+
+.prev__card, 
+.next__card {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: var(--color-white);
+  border: 1px solid black; 
+  border-radius: 50%;
+  padding: 12px 16.5px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.prev__card {
+  left: 20px;
+  color: var(--color-black);
+}
+
+.next__card { 
+  right: 15px; 
+  color: var(--color-black); 
+}
+
+.can-interest__delivery-day{
+  width: var(--sixteen-pixeles);
+  height: var(--sixteen-pixeles);
+}
+
+.can-interest__delivery {
+  color: var(--color-text-highlight);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight);
+  line-height: var(--sixteen-pixeles);
+  gap: 6px;
+  margin-left: 2px;
+  align-items: center;
+  display: flex;
+  margin-top: 5px;
+}
+
+/* Desktop style */
+@media (min-width: 768px){
+  .can-interes__title{
+    margin: auto;
+  }
+
+  .can-interest__content{
+    max-width: var(--max-widthx);
+  }
+
+  .can-interest__columns{
+    padding: var(--zero);
+  }
+
+  .can-interest__product{
+    padding: 40px 0px 121px;
+  }
+
+  .prev__card {
+    left: -20px;
+  }
+
+  .next__card { 
+    right: -5px; 
   }
 }
