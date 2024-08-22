@@ -352,8 +352,7 @@
   }
 
   .categories__products-shoppings {
-    grid-template-columns: 1fr
-     1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--gap-medium);
   }
 
