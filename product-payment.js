@@ -9,9 +9,9 @@ document.querySelector('.js-product-page-zoom').addEventListener('mousemove', fu
 });
 
   //Select the items
-  const decreaseBtn = document.querySelector('.product-page__decrease');
-  const increaseBtn = document.querySelector('.product-page__increase');
-  const quantityInput = document.querySelector('.product-page__quantity');
+  const decreaseBtn = document.querySelector('.js-product-page-decrease');
+  const increaseBtn = document.querySelector('.js-product-page-increase');
+  const quantityInput = document.querySelector('.js-product-page-quantity');
 
   // Initialize input
   let initialQuantity = null;
