@@ -333,6 +333,10 @@
   text-decoration: none;
 }
 
+.product-page__delivery-type{
+  appearance: none;
+}
+
 .product-page__add{
   display: flex;
   margin-top: 20px;
