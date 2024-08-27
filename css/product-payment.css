@@ -262,24 +262,30 @@
   color: var(--color-striking-gray);
 }
 
-.product-page__input{
+.product-page__input {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .product-page__thanks{
-  background-color: var(--color-whiteX);
-  padding: 8px 10px 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-color: var(--color-whiteX);
+  padding: var(--ten-pixel);
+  padding-right: 30px; 
+  font-size: var(--font-size-smalls);
   color: var(--color-striking-gray);
   border-radius: var(--eight-pixel);
-  border: none;
-  position: relative;
+  width: var(--width);
+  cursor: pointer;
+  background: var(--color-whiteX) url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNyAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuMTA5MzggNkw4LjEwOTM4IDEwTDEyLjEwOTMgNiIgc3Ryb2tlPSIjMzYzNTM1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz4KPC9zdmc+') no-repeat right 10px center;
 }
 
-.product-page__svg {
-  position: absolute;
-  margin-left: 120px;
-  margin-top: 6px;
+.product-page__thanks:focus {
+  border-color: var(--color-pink);
+  outline: none;
 }
 
 .product-page__learn-more{
@@ -303,13 +309,12 @@
   align-items: center;
   gap: var(--sixteen-pixeles);
   margin-top: 10px;
-
 }
 
 .product-page__method{
   font-size: var(--sixteen-pixeles);
   font-weight: var(--font-weight);
-  line-height: 20.11px;
+  line-height: var(--twenty-pixel);
   color: var(--color-dark-gray);
 }
 
@@ -336,68 +341,61 @@
   padding: 19px 0px;
   border-radius: 0px 0px 16px 16px;
   position: relative;
-}  
+}
 
 .product-page__quantity-selector{
   display: flex;
   align-items: center;
   border: 1px solid var(--color-solid);
-  width: 115px;
+  width: 120px;
   border-radius: var(--eight-pixel);
   justify-content: center;
   gap: 5px;
   position: absolute;
   margin-left: 20px;
   background-color: var(--color-white);
-}
-
-.product-page__quantity__link {
-  font-size: 0;
-  inset: 0;
-  position: absolute;
-  z-index: 1;
+  height: 45px;
 }
 
 .product-page__decrease{
   border: none;
   background: none;
   cursor: pointer;
-  width: 22px;
-  border: 1px solid var(--color-solid);
-  margin-left: 5px;
+  font-size: 50px;
+  color: var(--color-solid);
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 .product-page__quantity {
-  font-size: var(--twenty-pixel);
+  font-size: 22px;
   font-weight: var(--font-weight);
-  line-height: 25px;
+  line-height: var(--line-height-medium);
   text-align: center;
-  width: 95px;
+  width: 64px;
   padding: 7px 10px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
   border-left: 1.5px solid var(--color-solid);
   border-right: 1.5px solid var(--color-solid);
   color: var(--color-solid);
-  background-color: var(--color-whiteX);
+  background-color: #f5f5f5;
+  border-bottom: none;
+  border-top: none;
+}
+
+.product-page__quantity::placeholder {
+  color: var(--color-solid)
 }
 
 .product-page__increase{
   border: none;
   background: none;
   cursor: pointer;
-  width: 25px;
-  border: 1.5px solid var(--color-solid);
-  margin-right: 6px;
-}
-
-.product-page__increase--1{
-  height: var(--eighteen-pixel);  
-  width: var(--zero);
-  position: absolute;
-  margin-left: 93px;
+  color: var(--color-solid);
+  font-size: 40px;
+  margin-right: 15px;
 }
 
 .product-page__add-purchases{
@@ -442,13 +440,13 @@
 @media (min-width: 768px) {
   .product-page__top {
     padding-bottom: 24px;
-    margin: 0 5px; 
+    margin: 0px; 
   }
 
   .product-page__text {
     font-size: var(--font-size-smalls);
   }
-  
+
   .product-page__content{
     flex-direction: row;
     margin: 0px 0px 20px;
@@ -474,13 +472,13 @@
   }
 
   .product-page__card{
-    width: 437px;
+    flex-basis: 438px;
     padding: 10px 18px 0px;
   }
 
   .product-page__full{
     padding: 0px;
-}
+  }
 
   .product-page__description{
     font-size: 28px;
@@ -515,21 +513,25 @@
     font-size: var(--font-size-small);
   }
 
-  .product-page__bords{
-    width: 420px;
-  }
-
   .product-page__add{
     margin-left: -18px;
-    width: 437px;
+    margin-right: -18px;
   }
 
   .product-page__quantity-selector{
     width: 135px;
   }
 
-  .product-page__increase--1{
-    margin-left: 108px;
+  .product-page__quantity {
+    width: 68px;
+  }
+
+  .product-page__increase{
+    margin-left: 3px;
+  }
+
+  .product-page__decrease{
+    margin-right: 3px;
   }
 
   .product-page__add-purchases{
