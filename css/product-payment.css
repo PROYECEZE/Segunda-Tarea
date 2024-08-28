@@ -337,12 +337,12 @@
   display: none;
 }
 
-.product-page__delivery-type:checked ~ svg ~ p {
+.product-page__delivery-type:checked ~ p {
   color: var(--color-pink);
   border-radius: var(--eight-pixel);
 }
 
-.product-page__delivery-type:checked ~ svg ~ p::before {
+.product-page__delivery-type:checked ~ p::before {
   content: '✓';
   color: var(--color-pink); 
 }
