@@ -673,6 +673,7 @@
 .improve-purchase__card {
   display: flex;
   border-bottom: 1px solid var(--color-solid);
+  position: relative;
 }
 
 .improve-purchase__card--padding {
@@ -793,7 +794,18 @@
   letter-spacing: var(--letter-spacing-negative);
   color: var(--color-pink);
   cursor: pointer;
+  z-index: 1;
 }
+
+.improve-purchase__link:hover ~ .improve-purchase__play .improve-purchase__add  {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+
+.product__card-link:hover ~ .product__sales .product__entrega{
+  color: #efac03;
+}
+
 
 /* Desktop style */
 @media (min-width: 768px) {
