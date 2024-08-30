@@ -983,3 +983,111 @@
     width: 123px;
   }
 }
+
+/* Movil style */
+.information {
+  max-width: var(--max-widthM);
+  margin: var(--twenty-pixel);
+}
+
+.information__background{
+  background-color: var(--color-white);
+  padding: 20px 24px 15px 20px;
+  border-radius: var(--sixteen-pixeles);
+  box-shadow: var(--box-shadowL);
+}
+
+.information__top{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-solid);
+  margin-bottom: 15px;
+}
+
+.information__title{
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight-small);
+  line-height: var(--sixteen-pixeles);
+  letter-spacing: 1.5px;
+  color: var(--color-gray);
+  margin-bottom: 15px;
+}
+
+.information__see{
+  font-size: var(--font-size-smalls);
+  font-weight: var(--font-weight-small);
+  line-height: var(--twenty-pixel);
+  letter-spacing: var(--letter-spacing-negative);
+  text-decoration: none;
+  color: var(--color-pink);
+  margin-top: -3px;
+  margin-right: 11px;
+}
+
+.information__info{
+  list-style: none;
+  padding: var(--zero);
+}
+
+.information__day {
+  margin-bottom: 20px;
+}
+
+.information__day--padding {
+  padding-top: 30px;
+}
+
+.information__svg{
+  margin-bottom: -7px;
+  margin-left: 110px;
+}
+
+.information__svg--margin{
+  margin-left: 105px;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.information__delivery{
+  margin-left: 20px;
+  margin-top: -20px;
+  font-size: var(--sixteen-pixeles);
+  font-weight: var(--font-weight);
+  line-height: 22px;
+  color: var(--color-striking-gray);
+}
+
+.information__shop{
+  color: var(--color-pink);
+  margin-left: 10px;
+}
+
+.information__shop--margin{
+  margin-left: var(--zero);
+}
+
+.information__day::before {
+  content: "";
+  display: inline-block;
+  width: var(--ten-pixel);
+  height: var(--ten-pixel);
+  border-radius: 50%;
+  background-color: var(--color-solid);
+  vertical-align: middle;
+}
+
+/* Desktop style */
+@media (min-width: 768px) {
+  .information {
+    margin: auto;
+    margin-bottom: 45px;
+  }
+
+  .information__background{
+    max-width: 790px;
+  }
+
+  .information__svg--margin{
+    margin-left: 265px;
+  }
+}
