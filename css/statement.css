@@ -35,6 +35,7 @@
   --gap-medium: 24.98px;
   --font-size-xlarge: 24px;
   --font-size-smalls: 14px;
+  --font-size-smalln: 13px;
   --font-size-small: 12px;
   --font-weight: 400;
   --font-weight-small: 600;
@@ -124,10 +125,15 @@ body {
   color: var(--color-menu-link);
 }
 
+.btn--outline:hover {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
 .c-secondary {
   color: var(--color-menu-link);
 }
 
-.c-white {
+.c-secondary:hover{
   color: var(--color-white);
 }
