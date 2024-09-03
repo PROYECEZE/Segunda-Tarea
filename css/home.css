@@ -55,6 +55,8 @@
   height: 290px;
   background-size: cover;
   background-position: center;
+  list-style-type: none;
+  position: relative;
 }
 
 .prev,
@@ -132,6 +134,7 @@
   font-weight: var(--font-weight);
   line-height: var(--line-height-small);
   z-index: 1;
+  list-style-type: none;
 }
 
 .card:hover {
