@@ -49,7 +49,6 @@
   color: var(--color-white);
 }
 
-
 .header__login {
   display: flex;
   align-items: center;
@@ -172,7 +171,6 @@
   .nav-link { 
     font-size: var(--ten-pixel);
   }
-
 }
 
 /* Desktop style */
