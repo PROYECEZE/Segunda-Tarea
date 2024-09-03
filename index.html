@@ -84,94 +84,100 @@
     <section class="product">
       <div class="carousel">
         <div class="carousel__product">
-          <div class="carousel__img js-carousel-img">
-            <div class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')"></div>
-            <div class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')"></div>
-            <div class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')"></div>
-          </div>
+          <ul class="carousel__img js-carousel-img">
+            <li class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')">
+              <a href="#" class="product__card-link" aria-label="vizualizar productos"></a>
+            </li>
+            <li class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')">
+              <a href="#" class="product__card-link" aria-label="ver información"></a>
+            </li>
+            <li class="carousel__item product-banner js-carousel-item" style="background-image: url('image/Banner.jpg')">
+              <a href="#" class="product__card-link" aria-label="ver promociones"></a>
+            </li>
+          </ul>
           <div class="indicators">
-            <button type="button" class="dot js-dot js-go-to-slide" data-slide="0"></button>
-            <button type="button" class="dot js-dot js-go-to-slide" data-slide="1"></button>
-            <button type="button" class="dot js-dot js-go-to-slide" data-slide="2"></button>
+            <button type="button" class="dot js-dot js-go-to-slide" data-slide="0" aria-hidden="true"></button>
+            <button type="button" class="dot js-dot js-go-to-slide" data-slide="1" aria-hidden="true"></button>
+            <button type="button" class="dot js-dot js-go-to-slide" data-slide="2" aria-hidden="true"></button>
           </div>
         </div>
-        <button class="prev js-prev js-move-slide" data-direction="-1">&#10094;</button>
-        <button class="next js-next js-move-slide" data-direction="1">&#10095;</button>
+        <button class="prev js-prev js-move-slide" data-direction="-1" aria-hidden="true">&#10094;</button>
+        <button class="next js-next js-move-slide" data-direction="1" aria-hidden="true">&#10095;</button>
       </div>
-      <div class="product__derecha">
-        <div class="card">
-          <a href="#" class="product__card-link"></a>
+      <ul class="product__derecha">
+        <li class="card">
+          <a href="#" class="product__card-link" aria-label="vizualizar el producto"></a>
           <div class="product__img">
-            <img class="aire" src="image/1.png" alt="" class="rating">
-            <span class="star">&#9733;</span>
-            <span class="product__rating">5</span>
+            <img class="product__aire" src="image/1.png" alt="aire acondicionado" class="rating">
+            <span class="star" aria-hidden="true">&#9733;</span>
+            <span class="product__rating" aria-label="calificación de productos 5">5</span>
           </div>
           <div class="product__sales">
             <span class="product__categoria">HOME ELECTRICS</span>
             <span class="product__nombre">Aire acondicionado 12.000 BTU</span>
             <div class="product__valor">
-              <p class="product__total">159.99</p>
+              <p class="product__total" aria-label="precio de producto 159.99">159.99</p>
               <div class="product__entrega">
                 <img class="product__today" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
               </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <a href="#" class="product__card-link"></a>
+        </li>
+        <li class="card">
+          <a href="#" class="product__card-link" aria-label="vizualizar el producto"></a>
           <div class="product__img">
-            <img src="image/2.png" alt="" class="rating">
-            <span class="star">&#9733;</span>
-            <span class="product__rating">4</span>
+            <img src="image/2.png" alt="Adaptador de corriente de 3 pines" class="rating">
+            <span class="star" aria-hidden="true">&#9733;</span>
+            <span class="product__rating" aria-label="calificación de productos 4">4</span>
           </div>
           <div class="product__sales">
             <span class="product__categoria">FORZA</span>
             <span class="product__nombre">Adaptador de corriente de 3 pines</span>
             <div class="product__valor">
-              <p class="product__total">6.99</p>
+              <p class="product__total" aria-label="precio de producto 6.99">6.99</p>
               <div class="product__entrega">
                 <img class="product__today" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
               </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <a href="#" class="product__card-link"></a>
+        </li>
+        <li class="card">
+          <a href="#" class="product__card-link" aria-label="vizualizar el producto"></a>
           <div class="product__img">
-            <img src="image/3.png" alt="" class="rating">
-            <span class="star">&#9733;</span>
-            <span class="product__rating">4</span>
+            <img src="image/3.png" alt="Olla freidora Air-fryer de 2 Litros" class="rating">
+            <span class="star" aria-hidden="true">&#9733;</span>
+            <span class="product__rating" aria-label="calificación de productos 4">4</span>
           </div>
           <div class="product__sales">
             <span class="product__categoria">COOKING E</span>
             <span class="product__nombre">Olla freidora Air-fryer de 2 Litros</span>
             <div class="product__valor">
-              <p class="product__total">49.99</p>
+              <p class="product__total" aria-label="precio de producto 49.99">49.99</p>
               <div class="product__entrega">
                 <img class="product__today" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
               </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <a href="#" class="product__card-link"></a>
+        </li>
+        <li class="card">
+          <a href="#" class="product__card-link" aria-label="vizualizar el producto"></a>
           <div class="product__img">
-            <img src="image/4.png" alt="" class="rating">
-            <span class="star">&#9733;</span>
-            <span class="product__rating">4</span>
+            <img src="image/4.png" alt="Hidrolavadora eléctrica 1450 psi y 1400w" class="rating">
+            <span class="star" aria-hidden="true">&#9733;</span>
+            <span class="product__rating" aria-label="calificación de productos 4">4</span>
           </div>
           <div class="product__sales">
             <span class="product__categoria">WESTINGHOUSE</span>
             <span class="product__nombre">Hidrolavadora eléctrica 1450 psi y 1400w</span>
             <div class="product__valor">
-              <p class="product__total">79.99</p>
+              <p class="product__total" aria-label="precio de producto 79.99">79.99</p>
               <div class="product__entrega">
                 <img class="product__today" src="image/Entregahoy.png" alt="prioridad"> Entrega hoy
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
     <section class="carousel__categories">
       <div class="categories">
