@@ -452,6 +452,7 @@
 .functionality__carousel {
   display: flex;
   transition: transform 0.3s ease;
+  list-style-type: none;
 }
 
 .functionality__icons {
