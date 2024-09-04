@@ -519,6 +519,11 @@
   letter-spacing: var(--letter-spacing-negative);
   text-align: center;
   color: var(--color-text-highlight);
+  z-index: 1;
+}
+
+.functionality__Saber-mas:hover {
+  color: red;
 }
 
 .carousel__controls {
