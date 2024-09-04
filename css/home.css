@@ -462,7 +462,7 @@
   overflow: hidden;
   background-color: var(--color-white);
   gap: 40px;
-  min-width: 100%;
+  min-width: var(--width);
   box-sizing: border-box;
   padding: var(--twenty-pixel);
 }
@@ -478,8 +478,6 @@
 
 .functionality__overlay {
   position: absolute;
-  top: 0;
-  left: 0;
   width: var(--width);
   height: 100%;
   background-color: var(--color-skin);
@@ -508,17 +506,17 @@
 .functionality__paragraph {
   font-size: var(--twenty-pixel);
   font-weight: var(--font-weight-small);
-  line-height: 30px;
+  line-height: var(--line-heightx-large);
   letter-spacing: 1%;
   text-align: center;
   color: var(--color-text-dark);
 }
 
 .functionality__Saber-mas {
-  font-size: 14px;
+  font-size: var(--font-size-smalls);
   font-weight: var(--font-weight-small);
   line-height: var(--twenty-pixel);
-  letter-spacing: -1%;
+  letter-spacing: var(--letter-spacing-negative);
   text-align: center;
   color: var(--color-text-highlight);
 }
@@ -550,8 +548,8 @@
 }
 
 .carousel__indicator {
-  width: 10px;
-  height: 10px;
+  width: var(--ten-pixel);
+  height: var(--ten-pixel);
   background: #ddd;
   border-radius: 50%;
   margin: 0 5px;
@@ -566,10 +564,11 @@
   border: none;
 }
 
-/* Estilo para escritorio */
+/* Styles for tablets */
 @media (min-width: 768px) {
   .functionality {
     height: 210px;
+    padding: 5px;
   }
 
   .functionality__information {
@@ -581,16 +580,18 @@
     flex-direction: row;
     align-items: center;
     min-width: auto;
-    padding: 0;
-    gap: 13.32px;
+    padding: var(--zero);
+    gap: 5px;
+    overflow: visible;
   }
 
   .functionality__text {
     align-items: flex-start;
   }
 
-  .functionality__paragraph, .functionality__Saber-mas {
+  .functionality__paragraph {
     text-align: left;
+    font-size: var(--eighteen-pixel);
   }
 
   .functionality__bord {
@@ -600,6 +601,17 @@
 
   .carousel__controls, .carousel__indicators {
     display: none;
+  }
+
+  .functionality__carousel {
+    gap: 14px;
+  }
+}
+
+/* Estilo para escritorio */
+@media (min-width: 1300px) {
+  .functionality__icons {
+    gap: 13px;
   }
 
   .functionality__carousel {
