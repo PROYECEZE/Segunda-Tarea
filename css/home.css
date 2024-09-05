@@ -1129,7 +1129,7 @@
 .popular-brands__title {
   font-size: var(--twenty-pixel);
   font-weight: var(--font-weight-small); 
-  line-height: 30px;
+  line-height: var(--line-heightx-large);
   letter-spacing: 1%;
   color: #363535;
   margin: 28px auto;
@@ -1152,6 +1152,7 @@
   display: flex;
   gap: 40px;
   overflow-x: auto;
+  list-style-type: none;
 }
 
 .popular-brands__carousel::-webkit-scrollbar {
@@ -1162,8 +1163,17 @@
   scroll-snap-align: center;
 }
 
-/* Desktop style */
+/* Styles for tablets */
 @media (min-width: 768px) {
+  .popular-brands__carousel {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+  }
+}
+
+/* Desktop style */
+@media (min-width: 1300px) {
   .popular-brands__carousel {
     overflow: visible;
   }
@@ -1182,7 +1192,6 @@
   .popular-brands__icons {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 40px 0px 40px;
     gap: 44px;
