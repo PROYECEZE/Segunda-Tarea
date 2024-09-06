@@ -22,3 +22,37 @@ nextButton.addEventListener('click', () => {
     }
     productContainer.style.transform = `translateX(-${scrollAmount}px)`;
 });
+
+
+//Select the items
+const decreaseBtn = document.querySelector('.js-purchase-summary-decrease');
+const increaseBtn = document.querySelector('.js-purchase-summary-increase');
+const quantityInput = document.querySelector('.js-purchase-summary-quantity');
+
+// Initialize input
+let initialQuantity = null;
+// Function to decrease the quantity
+decreaseBtn.addEventListener('click', () => {
+  if (initialQuantity === null) {
+    initialQuantity = 1;
+  }
+
+  let currentValue = parseInt(quantityInput.value || initialQuantity);
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  } else {
+    quantityInput.value = "0";
+    initialQuantity = null;
+  }
+});
+
+// Function to increase the quantity
+increaseBtn.addEventListener('click', () => {
+  if (initialQuantity === null) {
+    initialQuantity = 1;
+    quantityInput.value = initialQuantity;
+  } else {
+    let currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+  }
+});
