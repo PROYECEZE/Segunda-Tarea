@@ -285,6 +285,7 @@
   margin-bottom: 16px;
   margin-top: 50px;
   margin-left: 110px;
+  z-index: 1;
 }
 
 .purchase-summary__quantity-selector{
@@ -434,6 +435,10 @@
   justify-content: center;
   gap: 7px;
   margin: 0px 20px 0px 20px;
+}
+
+.purchase-summary__payment-process:hover{
+  background-color: rgb(219, 23, 95);
 }
 
 .purchase-summary__payment-text{
