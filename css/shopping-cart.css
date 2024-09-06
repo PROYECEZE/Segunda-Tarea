@@ -86,6 +86,10 @@
   color: var(--color-pink);
 }
 
+.shopping-cart__link:hover ~ .shopping-cart__right-text{
+  color: rosybrown;
+}
+
 .shopping-cart__link {
   font-size: 0;
   inset: 0;
