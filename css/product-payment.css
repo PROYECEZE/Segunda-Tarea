@@ -20,6 +20,11 @@
   align-items: center;
 }
 
+.product-page__list{
+  display: flex;
+  gap: 9px;
+}
+
 .product-page__top-svg{
   margin-top: 5px;
 }
@@ -30,7 +35,7 @@
   border-right: 2.3px solid var(--color-soft-gray);
   border-bottom: 2.3px solid var(--color-soft-gray);
   transform: rotate(-45deg);
-  margin-top: 2px;
+  margin-top: 6px;
 }
 
 .product-page__text {
