@@ -10,6 +10,23 @@
   padding-top: 15px;
   gap: 9px;
   margin: 0 20px; 
+  align-items: center;
+}
+
+.product-page__top-Breadcrumb{
+  list-style: none;
+  display: flex;
+  gap: var(--ten-pixel);
+  align-items: center;
+}
+
+.product-page__list{
+  display: flex;
+  gap: 9px;
+}
+
+.product-page__top-svg{
+  margin-top: 5px;
 }
 
 .product-page__arrow-right {
@@ -18,7 +35,7 @@
   border-right: 2.3px solid var(--color-soft-gray);
   border-bottom: 2.3px solid var(--color-soft-gray);
   transform: rotate(-45deg);
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .product-page__text {
@@ -27,6 +44,7 @@
   font-weight: var(--font-weight);
   line-height: var(--eighteen-pixel);
   letter-spacing: var(--letter-spacing-negative);
+  text-decoration: none;
 }
 
 .product-page__content{
@@ -299,9 +317,13 @@
   margin-top: 2px;
 }
 
+.product-page__learn-more:hover{
+  color: #9e255b;
+}
+
 .product-page__bords{
   border: 1px solid var(--color-solid);
-  gap: 0px;
+  gap: var(--zero);
   margin: 18px 0px 5px;
 }
 
@@ -449,21 +471,52 @@
   height: 9px;
   gap: 5px;
   margin-top: 10px;
+  list-style-type: none;
 }
 
 .product-page__add-target{
   margin-left: 150px;
 }
 
-/* Desktop style */
+/* Styles for tablets */
 @media (min-width: 768px) {
   .product-page__top {
     padding-bottom: 24px;
-    margin: 0px; 
   }
 
   .product-page__text {
     font-size: var(--font-size-smalls);
+  }
+
+  .product-page__content{
+    flex-direction: row;
+    margin: 0px 15px 25px 15px;
+    gap: var(--ten-pixel);
+  }
+
+  .product-page__air {
+    margin-top: 18pc;
+  }
+
+  .product-page__image {
+    width: 100px;
+  }
+
+  .product-page__zoom {
+    width: 300px;
+  }
+
+  .product-page__img {
+    align-items: center;
+    margin: auto;
+    width: 310px;
+  }
+}
+
+/* Desktop style */
+@media (min-width: 1300px) {
+  .product-page__top {
+    margin: 0px; 
   }
 
   .product-page__content{
@@ -496,7 +549,7 @@
   }
 
   .product-page__full{
-    padding: 0px;
+    padding: var(--zero);
   }
 
   .product-page__description{
@@ -574,6 +627,9 @@
     margin-left: 180px;
   }
 }
+
+
+
 
 /* Movil style */
 .improve-purchase{
@@ -992,7 +1048,7 @@
 
 .information__background{
   background-color: var(--color-white);
-  padding: 20px 0px 15px 20px;
+  padding: 20px 24px 15px 20px;
   border-radius: var(--sixteen-pixeles);
   box-shadow: var(--box-shadowL);
 }
@@ -1021,7 +1077,7 @@
   text-decoration: none;
   color: var(--color-pink);
   margin-top: -3px;
-  margin-right: 30px;
+  margin-right: 11px;
 }
 
 .information__info{
@@ -1089,6 +1145,6 @@
   }
 
   .information__svg--margin{
-    margin-left: 260px;
+    margin-left: 265px;
   }
 }
