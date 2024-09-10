@@ -318,7 +318,7 @@
 }
 
 .product-page__learn-more:hover{
-  color: #9e255b;
+  color: var(--color-violet);
 }
 
 .product-page__bords{
@@ -454,7 +454,7 @@
 }
 
 .product-page__add-purchases:hover{
-  background-color: #9e255b;
+  background-color: var(--color-violet);
 }
 
 .product-page__add-cart{
@@ -1111,6 +1111,10 @@
   margin-right: 11px;
 }
 
+.information__see:hover{
+  color: var(--color-violet);
+}
+
 .information__info{
   list-style: none;
   padding: var(--zero);
@@ -1154,6 +1158,10 @@
   margin-left: var(--zero);
 }
 
+.information__shop:hover{
+  color: var(--color-violet);
+}
+
 .information__day::before {
   content: "";
   display: inline-block;
@@ -1186,4 +1194,8 @@
   .information__background{
     margin: 0px;
   }
+}
+
+.product-page__learn-more:hover{
+  color: var(--color-violet);
 }
