@@ -628,9 +628,6 @@
   }
 }
 
-
-
-
 /* Movil style */
 .improve-purchase{
   max-width: var(--max-widthM);
@@ -690,7 +687,7 @@
 .improve-purchase__paragraph{
   font-size: var(--sixteen-pixeles);
   font-weight: var(--font-weight);
-  line-height: 22px;
+  line-height: var(--line-height-small);
   color: var(--color-striking-gray);
 }
 
@@ -701,7 +698,7 @@
 .improve-purchase__right-title{ 
   font-size: var(--twenty-pixel);
   font-weight: var(--font-weight-small);
-  line-height: 30px;
+  line-height: var(--line-heightx-large);
   letter-spacing: 0.01em;
   color: var(--color-gray);
   margin-bottom: 10px;
@@ -785,7 +782,7 @@
 .improve-purchase__paint{
   font-size: var(--sixteen-pixeles);
   font-weight: var(--font-weight-small);
-  line-height: 30px;
+  line-height: var(--line-heightx-large);
   letter-spacing: 0.01em;
   color: var(--color-striking-gray);
 }
@@ -862,8 +859,7 @@
   color: #efac03;
 }
 
-
-/* Desktop style */
+/* Styles for tablets */
 @media (min-width: 768px) {
   .improve-purchase{
     margin: auto;
@@ -871,21 +867,15 @@
 
   .improve-purchase__top{
     margin-bottom: 24px;
-    margin-left: 0px;
   }
 
   .improve-purchase__content{
     flex-direction: row;
-    margin: 0px;
+    gap: 32px;
   }
 
   .improve-purchase__info{
-    flex-basis: 800px;
-    padding: 16px 20px 161px 20px;
-  }
-
-  .improve-purchase__paragraph--padding{
-    padding-right: 202px;
+    padding: 15px;
   }
 
   .improve-purchase__info-right{
@@ -894,7 +884,8 @@
   }
 
   .improve-purchase__right-title{ 
-    margin-bottom: 5px;
+    margin-bottom: 28px;
+    margin-left: 270px;
   }
 
   .improve-purchase__kote{
@@ -911,7 +902,7 @@
   }
 
   .improve-purchase__carry--gap{
-    gap: 0px;
+    gap: var(--zero);
     padding-bottom: 15px;
   }
 
@@ -923,7 +914,7 @@
   }
 
   .improve-purchase__price{
-    font-size: 24px;
+    font-size: var(--font-size-xlarge);
   }
 
   .improve-purchase__price--margin{
@@ -939,6 +930,33 @@
 
   .improve-purchase__add{
     padding: 10px 30px 10px 30px;
+  }
+}
+
+/* Desktop style */
+@media (min-width: 1300px) {
+  .improve-purchase__top{
+    margin-left: 0px;
+  }
+
+  .improve-purchase__content{
+    flex-direction: row;
+    margin: 0px;
+    gap: 52px;
+  }
+
+  .improve-purchase__info{
+    flex-basis: 800px;
+    padding: 16px 20px 161px 20px;
+  }
+
+  .improve-purchase__paragraph--padding{
+    padding-right: 202px;
+  }
+
+  .improve-purchase__right-title{ 
+    margin-bottom: 5px;
+    margin-left: 0px;
   }
 }
 
