@@ -1007,7 +1007,7 @@
   line-height: var(--eighteen-pixel);
   letter-spacing: var(--letter-spacing-negative);
   color: var(--color-striking-gray);
-  padding: 8px;
+  padding: 9px;
   background-color: var(--color-whiteX);
   border-radius: 8px 0px 0px 8px;
   flex-basis: 86px;
@@ -1026,11 +1026,16 @@
   flex-basis: 123px;
 }
 
-/* Desktop style */
+/* Styles for tablets */
 @media (min-width: 768px) {
   .specifications { 
     margin: auto;
     margin-bottom: 21px;
+  }
+
+  .specifications__background{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .specifications__content{
@@ -1055,6 +1060,14 @@
 
   .specifications__finish {
     width: 123px;
+  }
+}
+
+/* Desktop style */
+@media (min-width: 1300px) {
+  .specifications__background{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
