@@ -1164,7 +1164,7 @@
   vertical-align: middle;
 }
 
-/* Desktop style */
+/* Styles for tablets */
 @media (min-width: 768px) {
   .information {
     margin: auto;
@@ -1173,9 +1173,17 @@
 
   .information__background{
     max-width: 790px;
+    margin: 20px;
   }
 
   .information__svg--margin{
     margin-left: 265px;
+  }
+}
+
+/* Desktop style */
+@media (min-width: 1300px) {
+  .information__background{
+    margin: 0px;
   }
 }
